@@ -1,0 +1,76 @@
+.ONas {
+	display: flex;
+	flex-direction: row;
+	padding-top: 5vh;
+}
+/*--Text container --*/
+.ONas .container__text {
+	width: auto;
+	flex: 55%;
+	padding: 0 5vw;
+}
+
+.ONas h1 {
+	display: inline-block;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.ONas h2 {
+	display: inline;
+}
+
+.ONas p {
+	padding-top: 2vh;
+	font-family: 'Futura PT Book';
+	font-weight: 500;
+	font-size: 2.8vh;
+	color: #8d8d8d;
+}
+
+/*--Text container --*/
+/*--Image container--*/
+.ONas .image__container {
+	height: 68.0555vh;
+	width: 38.28125vw;
+	position: relative;
+	flex: 45%;
+}
+
+.cyan {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #02d3be;
+	width: 67.347%;
+	height: 81%;
+	z-index: 5;
+}
+
+.ONas .picha {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	/*background-image: url('../images/shprits.png');*/
+	background-color: cyan;
+	display: grid;
+	place-items: center;
+	width: 76.122%;
+	height: 85.6%;
+	background-size: 100% 100%;
+	box-shadow: 0 0 3vh rgba(0, 0, 0, 0.05);
+	z-index: 6;
+}
+
+.ONas .dots {
+	/*background-image: url('../images/3x8.png');*/
+	background-color: navy;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5%;
+	right: 2%;
+	height: 85%;
+	width: 33%;
+	z-index: 3;
+}
+/*--Image Container--*/

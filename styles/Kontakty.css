@@ -1,0 +1,163 @@
+.Kontakty {
+	display: flex;
+	flex-direction: row;
+	padding-top: 5vh;
+}
+/*--Text container --*/
+.Kontakty .bigContainer{
+	flex: 55%;
+	padding: 0 5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.Kontakty .container__text {
+	padding: 0;
+	margin: 0;
+}
+
+.Kontakty .table {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Kontakty h1 {
+	display: inline-block;
+	border-bottom: 1px solid #d2d2d2;
+	margin-bottom: 3vh;
+}
+
+.Kontakty h2 {
+	display: inline;
+}
+
+.Kontakty p {
+	padding-top: 1vh;
+	font-family: 'Futura PT Book';
+	font-weight: 400;
+	font-size: 2.8vh;
+	color: #8d8d8d;
+}
+
+.time p {
+	color: black;
+}
+
+.Kontakty .line {
+	width: 70%;
+	height: 1px;
+	background-color: #d2d2d2;
+	box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+}
+
+/*--Text container --*/
+/*--Image container--*/
+.Kontakty .image__container {
+	height: 68.0555vh;
+	width: 38.28125vw;
+	position: relative;
+	flex: 45%;
+}
+
+.cyan {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #02d3be;
+	width: 67.347%;
+	height: 81%;
+	z-index: 4;
+}
+
+.Kontakty .picha {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	/*background-image: url('../images/map.png');*/
+	background-color: purple;
+	display: grid;
+	place-items: center;
+	width: 76.122%;
+	height: 80.6%;
+	background-size: 100% 100%;
+	box-shadow: 0 0 3vh rgba(0, 0, 0, 0.05);
+	z-index: 6;
+}
+
+.Kontakty .dots {
+	/*background-image: url('../images/6x9.png');*/
+	background-color: green;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 8%;
+	left: 5%;
+	height: 70%;
+	width: 50%;
+	z-index: 5;
+	opacity: 0.8;
+}
+/*--Image Container--*/
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+	width: 98%;
+	height: 7.36vh;
+	background-color: #00d3bd;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2vw;
+}
+
+.footer a,
+.footer a:after {
+	text-decoration: none;
+	font-family: "Futura PT Book";
+	font-weight: 400;
+	color: white;
+	font-size: 1.8vh;
+	line-height: 7.36vh;
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0);
+
+	transition-property: color, background-color;
+	transition-duration: 150ms;
+	transition-timing-function: ease-in;
+}
+
+.footer a:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+	color: #00625a;
+}
+
+.footer .text {
+	flex: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;;
+	align-items: center;
+
+	font-family: "Bebas Neue";
+	font-size: 2.4vh;
+	font-weight: normal;
+	color: white;
+}
+
+.footer .links {
+	flex: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

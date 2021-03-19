@@ -1,0 +1,30 @@
+.content {
+  position: absolute;
+	height: auto;
+	width: auto;
+	left: 17.2vw;
+	top: 13.9vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 82.8vw;
+  height: auto;
+}
+
+.page {
+  width: auto;
+  height: 86.1vh;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  flex: 1 0 86.1vh;
+  position: relative;
+}

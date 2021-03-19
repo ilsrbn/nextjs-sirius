@@ -1,0 +1,77 @@
+.Partnery {
+	display: flex;
+	flex-direction: row;
+	padding-top: 5vh;
+}
+/*--Text container --*/
+.Partnery .container__text {
+	margin-top: 0;
+	width: auto;
+	flex: 55%;
+	padding: 0 5vw;
+}
+
+.Partnery .odrex__logo {
+	/*background-image: url('../images/odrex__logo.png');*/
+	background-color: #888;
+	background-size: 100% 100%;
+	width: 25vw;
+	height: 7.2vw;
+	margin-bottom: 5vh;
+}
+
+.Partnery p {
+	padding-top: 2vh;
+	font-family: 'Futura PT Book';
+	font-weight: 400;
+	font-size: 2.8vh;
+	color: #8d8d8d;
+}
+
+/*--Text container --*/
+/*--Image container--*/
+.Partnery .image__container {
+	height: 68.0555vh;
+	width: 38.28125vw;
+	position: relative;
+	flex: 45%;
+}
+
+.cyan {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #02d3be;
+	width: 67.347%;
+	height: 81%;
+	z-index: 5;
+}
+
+.Partnery .picha {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	/*background-image: url('../images/odrex.png');*/
+	background-color: gold;
+	display: grid;
+	place-items: center;
+	width: 76.122%;
+	height: 85.6%;
+	background-size: 100% 100%;
+	box-shadow: 0 0 3vh rgba(0, 0, 0, 0.05);
+	z-index: 6;
+}
+
+.Partnery .dots {
+	/*background-image: url('../images/3x8.png');*/
+	background-color: silver;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5%;
+	right: 2%;
+	height: 85%;
+	width: 33%;
+	z-index: 3;
+}
+/*--Image Container--*/

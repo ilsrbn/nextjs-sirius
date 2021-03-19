@@ -1,0 +1,107 @@
+/*--Slider Settings--*/
+.Glavnaya {
+	width: auto;
+	height: 86.1vh;
+}
+
+.Glavnaya .swiper-wrapper {
+	display: flex;
+	flex-direction: row;
+	height: 86.1vh;
+	width: 100%;
+}
+
+.Glavnaya .swiper-slide {
+  flex: 1 0 82.8vw;
+  position: relative;
+}
+/*--Slider Settings--*/
+
+/*--Navigation Buttons--*/
+
+.nav__button__accesoir {
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+  height: 13.9vh;
+  width: 50vw;
+  background: #00d3bd;
+}
+
+.nav__button__pagination {
+  position: absolute;
+  bottom: 0;
+  right: 29.921875vw;
+  height: 13.9vh;
+  width: 21.4vw;
+  padding: 0 2.58vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__button__pagination .number {
+  flex: 50%;
+  display: flex;
+  width: 2vw;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 1vh;
+  font-family: 'Bebas Neue';
+  font-size: 3vh;
+  color: #12ccbf;
+  border-bottom: 0.28vh solid #dbdbdb;
+
+}
+
+.nav__button__pagination .description {
+  font-family: 'Bebas Neue';
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 2.5vh;
+  flex: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #373737;
+}
+
+.nav__button {
+  font-size: 3vh;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  z-index: 59;
+  height: 13.9vh;
+  width: 13.9vh;
+  background: #00e0c8;
+  transition-property: background;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nav__button:hover {
+  background: #00e6d6;
+}
+
+.next {
+  right: 51.321875vw ;
+}
+
+.prev {
+  right: calc( 51.321875vw + 13.89vh);
+  transform: rotate(180deg);
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled:hover {
+  background-color: #01d9c4;
+  color: white;
+  cursor: default;
+}
+/*--Navigation Buttons*/

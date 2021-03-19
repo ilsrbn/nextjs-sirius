@@ -1,0 +1,130 @@
+.Glavnaya .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 86.1vh;
+  width: 100%;
+}
+
+.Glavnaya .swiper-slide {
+  flex: 1 0 82.8vw;
+  position: relative;
+}
+
+
+.Glavnaya .container__slide {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__text {
+  margin-top: 16.25vh;
+  margin-left: 2vw;
+}
+
+.container__text h1,
+.container__text h2 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7.36vh;
+  letter-spacing: 2px;
+  line-height: 7vh;
+  padding: 0;
+  color: black;
+}
+
+.Glavnaya .container__text p {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  color: black;
+  display: inline;
+}
+
+.container__text h2 {
+  padding: 0;
+  color: #12ccbf;
+}
+
+.Slide1__button {
+  padding: 0;
+  margin-top: 8.75vh;
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+.Slide1__button .text {
+  margin: 0;
+  font-family: 'Bebas Neue';
+  font-size: 2.3vh;
+  font-weight: bold;
+  color: #303030;
+  background: #fff;
+  font-weight: light;
+  text-align: center;
+  flex: 78%;
+  border: 1px solid #00d5bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+
+.Slide1__button:hover .text {
+  background: #00d5bf;
+  color: #fff;
+}
+
+.Slide1__button .icon {
+  margin: 0;
+  padding-bottom: 0.5vh;
+  flex: 22%;
+  height: 100%;
+  font-size: 3.3vh;
+  text-align: center;
+  line-height: 1vh;
+  color: white;
+  background: #00d5bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Glavnaya .image__container {
+  width: 51.321875vw;
+  height: 86.1vh;
+  /*background-size: cover;*/
+}
+
+.slide1 .image__container {
+  /*background-image: url('../images/doctor.png');*/
+  background-color: gray;
+}
+
+.slide2 .image__container {
+  /*background-image: url('../images/uslugi/3-min.jpg');*/
+  background-color: yellow;
+}
+
+.slide3 .image__container {
+  /*background-image: url('../images/uslugi/5-min.jpg');*/
+  background-color: purple;
+}
+
+.Glavnaya .dots {
+  position: absolute;
+  left: 0;
+  bottom: 5vh;
+  /*background-image: url('../images/5x4_2.png');*/
+  background-color: blue;
+  height: 22vh;
+  width: 21vw;
+  background-size: 100% 100%;
+}

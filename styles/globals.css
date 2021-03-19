@@ -1,16 +1,75 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/*------Font_Decalration------*/
+/*@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/Bebas_Neue/Bebas_Neue.ttf') format('truetype');
+}*/
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/Bebas/BebasNeueRegular.eot');
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+    url('/fonts/Bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Bebas/BebasNeueRegular.woff') format('woff'),
+    url('/fonts/Bebas/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/Bebas/BebasNeueBold.eot');
+  src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+    url('/fonts/Bebas/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Bebas/BebasNeueBold.woff') format('woff'),
+    url('/fonts/Bebas/BebasNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('/fonts/Bebas/BebasNeueBook.eot');
+  src: local('Bebas Neue Book'), local('BebasNeueBook'),
+    url('/fonts/Bebas/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Bebas/BebasNeueBook.woff') format('woff'),
+    url('/fonts/Bebas/BebasNeueBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('/fonts/FuturaPT/FuturaPT-Book.eot');
+    src: local('Futura PT Book'), local('FuturaPT-Book'),
+        url('/fonts/FuturaPT/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/FuturaPT/FuturaPT-Book.woff') format('woff'),
+        url('/fonts/FuturaPT/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*------Font_Decalration------*/
+/*------App------*/
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
 * {
+  font-family: 'Futura PT Book', sans-serif;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
+body a {
+  text-decoration: none;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+/*------App------*/

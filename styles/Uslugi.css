@@ -1,0 +1,188 @@
+.Uslugi {
+
+}
+
+.Uslugi h1,
+.Uslugi h2 {
+	display: inline-block;
+}
+
+.sheet {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.Cards__main-container {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+	display: flex;
+	flex-direction: row;
+	z-index: 5;
+	justify-content: center;
+	height: 100%;
+	width: 48.4475vw;
+}
+
+.Uslugi .container__text {
+	padding: 0;
+	margin-top: 5vh;
+}
+
+.Uslugi h1 {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.couple-of-cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+
+.secondCouple {
+	margin-top: 5vh; 
+}
+
+.thirdCouple {
+	margin-top: 10vh;
+}
+
+.card {
+	padding: 1vh 1vw;
+	margin: 2vh 1.5vw;
+
+	height: 23.194vh;
+	width: 14.0625vw;
+
+	border: 0.417vh solid #2ac8b1;
+	border-left: 5.833vh solid #2ac8b1;
+	border-radius: 2px;
+	background-color: white;
+
+	cursor: pointer;
+	transition-property: border, border-left, background-color;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.thirdCouple .card {
+	border: 0.417vh solid white;
+	border-left: 5.833vh solid white;
+	border-radius: 2px;
+	background-color: #01b29e;
+}
+
+.firstCouple .card:hover,
+.secondCouple .card:hover {
+	border: 0.417vh solid #59e2ce;
+	border-right: 5.833vh solid #59e2ce;
+	background-color: #b2e6e1;
+}
+
+.thirdCouple .card:hover {
+	border: 0.417vh solid #00625a;
+	border-right: 5.833vh solid #00625a;
+}
+
+.card__text {
+	font-family: 'Bebas Neue';
+	font-weight: bold;
+	font-size: 2.3vh;
+	color: black;
+	text-align: center;
+
+	flex: 33.7%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 1;
+	transition: opacity 150ms ease-in;
+}
+
+.thirdCouple .card__text {
+	color: white;
+}
+
+.card__icon {
+	flex: 66.6%;
+	background-size: 100% 100%;
+	width: 70%;
+	height: 11vh;
+
+	opacity: 1;
+	transition: opacity 150ms ease-in;
+}
+
+.card:hover .card__icon,
+.card:hover .card__text {
+	opacity: 0.8;
+}
+
+.firstCouple .firstCard .card__icon {
+	background-image: url('../public/images/icon_1.svg');
+}
+
+.firstCouple .secondCard .card__icon {
+	background-image: url('../public/images/icon_2.svg');
+}
+
+.secondCouple .firstCard .card__icon {
+	background-image: url('../public/images/icon_3.svg');
+}
+
+.secondCouple .secondCard .card__icon {
+	background-image: url('../public/images/icon_4.svg');
+}
+
+.thirdCouple .firstCard .card__icon {
+	background-image: url('../public/images/den.png');
+}
+
+.thirdCouple .secondCard .card__icon {
+	background-image: url('../public/images/icon_6.png');
+}
+
+.kakoy-to_block {
+	background-color: #00d3bd;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 50vw;
+	top: 0; 
+}
+
+.kakoy-to_block .pickcha {
+	/*background-image: url('../images/chel.png');*/
+	background-color: red;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-size: 100% 100%;
+	width: 62%;
+	height: 85%;
+	z-index: 5;
+	box-shadow: 0 0 2vh rgba(0, 0, 0, 0.15);
+}
+
+.kakoy-to_block .dots {
+	/*background-image: url('../images/6x9.png');*/
+	background-color: rgba(0, 0, 250, 0.6);
+	position: absolute;
+	background-size: 100% 100%;
+	z-index: 4;
+	top: 8%;
+	height: 60%;
+	width: 35%;
+	right: 38%;
+	opacity: 0.9;
+}

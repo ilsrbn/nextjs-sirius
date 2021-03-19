@@ -1,0 +1,132 @@
+.something {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	padding: 5vh 2vw;
+	overflow: hidden;
+}
+
+.something .container__text{
+	flex: 45%;
+	width: auto;
+	margin: 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.something h1 {
+	display: inline-block;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.something h2 {
+	display: inline;
+}
+
+.something p {
+	padding-top: 2vh;
+	font-family: 'Futura PT Book';
+	font-weight: 400;
+	font-size: 2.8vh;
+	color: black;
+}
+
+.something ul {
+	margin-left: 1vw;
+	list-style: none;
+}
+
+.something li {
+	color: #111;
+	font-size: 2.8vh;
+}
+
+.something a {
+	display: inline-block;
+	font-size: 5vh;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+	transition: color 150ms ease-in;
+}
+
+.something a:hover {
+	color: #00625a;
+}
+
+.something .image__container {
+	flex: 45%;
+	position: relative;
+	height: 68.0555vh;
+	width: 38.28125vw;
+	margin: 0;
+}
+
+.something .cyan {
+	position: absolute;
+	left: 100%;
+	transform: translateX(-100%);
+	top: 0;
+	background: #02d3be;
+	width: 67.347%;
+	height: 81%;
+	z-index: 5;
+}
+
+.something .picha {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: grid;
+	place-items: center;
+	width: 76.122%;
+	height: 85.6%;
+	background-size: 100% 100%;
+	box-shadow: 0 0 3vh rgba(0, 0, 0, 0.05);
+	z-index: 6;
+}
+
+.Service_1 .picha {
+	/*background-image: url('../images/uslugi/1-min.jpg')*/
+	background-color: cyan;
+}
+
+.Service_2 .picha {
+	/*background-image: url('../images/uslugi/2-min.jpg')*/
+	background-color: yellow;
+}
+
+.Service_3 .picha {
+	/*background-image: url('../images/uslugi/3-min.jpg')*/
+	background-color: green;
+}
+
+.Service_4 .picha {
+	/*background-image: url('../images/uslugi/4-min.jpg')*/
+	background-color: purple;
+}
+
+.Service_5 .picha {
+	/*background-image: url('../images/uslugi/5-min.jpg')*/
+	background-color: gray;
+}
+
+.Service_6 .picha {
+	/*background-image: url('../images/uslugi/6-min.jpg')*/
+	background-color: black;
+}
+
+.something .dots {
+	/*background-image: url('../images/3x8.png');*/
+	background-color: gray;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5%;
+	left: 2%;
+	height: 85%;
+	width: 33%;
+	z-index: 3;
+}
