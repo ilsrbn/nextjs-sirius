@@ -120,8 +120,8 @@
 }
 
 .something .dots {
-	/*background-image: url('../images/3x8.png');*/
-	background-color: gray;
+	background-image: url('../public/images/dots/3x8.png');
+	/*background-color: gray;*/
 	background-size: 100% 100%;
 	position: absolute;
 	top: 5%;
