@@ -37,6 +37,7 @@ function Komanda() {
 				} }
 
 				slidesPerView='auto'
+				slidesPerGroup={ 2 }
 				autoplay={ true }
 				simulateTouch={ false }
 				watchOverflow={ false }

@@ -19,11 +19,11 @@
   font-family: 'Bebas Neue';
 }
 
-.logo * {
-  margin-left: 4.5vh;
-  margin-top: 0.6vh;
-  max-height: 12vh;
-  max-width: 25vh;
+.logo {
+  height: 12vh;
+  width: 25vh;
+  background-image: url('../public/images/siriusdentodessa.jpg');
+  background-size: 100% 100%;
 }
 
 .buttons {

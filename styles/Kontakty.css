@@ -77,8 +77,8 @@
 	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
-	/*background-image: url('../images/map.png');*/
-	background-color: purple;
+	background-image: url('../public/images/map.png');
+	/*background-color: purple;*/
 	display: grid;
 	place-items: center;
 	width: 76.122%;
@@ -89,8 +89,8 @@
 }
 
 .Kontakty .dots {
-	/*background-image: url('../images/6x9.png');*/
-	background-color: green;
+	background-image: url('../public/images/dots/6x9.png');
+	/*background-color: green;*/
 	background-size: 100% 100%;
 	position: absolute;
 	top: 8%;

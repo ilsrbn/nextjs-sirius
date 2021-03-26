@@ -90,33 +90,33 @@
 }
 
 .Service_1 .picha {
-	/*background-image: url('../images/uslugi/1-min.jpg')*/
-	background-color: cyan;
+	background-image: url('../public/images/uslugi/1-min.jpg');
+	/*background-color: cyan;*/
 }
 
 .Service_2 .picha {
-	/*background-image: url('../images/uslugi/2-min.jpg')*/
-	background-color: yellow;
+	background-image: url('../public/images/uslugi/2-min.jpg');
+	/*background-color: yellow;*/
 }
 
 .Service_3 .picha {
-	/*background-image: url('../images/uslugi/3-min.jpg')*/
-	background-color: green;
+	background-image: url('../public/images/uslugi/3-min.jpg');
+	/*background-color: green;*/
 }
 
 .Service_4 .picha {
-	/*background-image: url('../images/uslugi/4-min.jpg')*/
-	background-color: purple;
+	background-image: url('../public/images/uslugi/4-min.jpg');
+	/*background-color: purple;*/
 }
 
 .Service_5 .picha {
-	/*background-image: url('../images/uslugi/5-min.jpg')*/
-	background-color: gray;
+	background-image: url('../public/images/uslugi/5-min.jpg');
+	/*background-color: gray;*/
 }
 
 .Service_6 .picha {
-	/*background-image: url('../images/uslugi/6-min.jpg')*/
-	background-color: black;
+	background-image: url('../public/images/uslugi/6-min.jpg');
+	/*background-color: black;*/
 }
 
 .something .dots {

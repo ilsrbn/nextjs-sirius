@@ -44,28 +44,28 @@
 }
 
 .portrait_1 {
-	/*background-image: url('../images/doctors/1.png');*/
-	background-color: red;
+	background-image: url('../public/images/doctors/1.png');
+	/*background-color: red;*/
 }
 
 .portrait_2 {
-	/*background-image: url('../images/doctors/2.png');*/
-	background-color: orange;
+	background-image: url('../public/images/doctors/2.png');
+	/*background-color: orange;*/
 }
 
 .portrait_3 {
-	/*background-image: url('../images/doctors/3.png');*/
-	background-color: yellow;
+	background-image: url('../public/images/doctors/3.png');
+	/*background-color: yellow;*/
 }
 
 .portrait_4 {
-	/*background-image: url('../images/doctors/4.png');*/
-	background-color: skyblue;
+	background-image: url('../public/images/doctors/4.png');
+	/*background-color: skyblue;*/
 }
 
 .portrait_5 {
-	/*background-image: url('../images/doctors/5.png');*/
-	background-color: blue;
+	background-image: url('../public/images/doctors/5.png');
+	/*background-color: blue;*/
 }
 
 .team__card .text {

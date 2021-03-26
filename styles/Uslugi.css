@@ -162,8 +162,8 @@
 }
 
 .kakoy-to_block .pickcha {
-	/*background-image: url('../images/chel.png');*/
-	background-color: red;
+	background-image: url('../public/images/chel.png');
+	/*background-color: red;*/
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -175,8 +175,8 @@
 }
 
 .kakoy-to_block .dots {
-	/*background-image: url('../images/6x9.png');*/
-	background-color: rgba(0, 0, 250, 0.6);
+	background-image: url('../public/images/dots/6x9.png');
+	/*background-color: rgba(0, 0, 250, 0.6);*/
 	position: absolute;
 	background-size: 100% 100%;
 	z-index: 4;

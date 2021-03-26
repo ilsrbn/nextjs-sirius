@@ -49,6 +49,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Futura PT Medium';
+    src: url('/fonts/FuturaPT/FuturaPT-Medium.eot');
+    src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+        url('/fonts/FuturaPT/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/FuturaPT/FuturaPT-Medium.woff') format('woff'),
+        url('/fonts/FuturaPT/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 /*------Font_Decalration------*/
 /*------App------*/
 body {
