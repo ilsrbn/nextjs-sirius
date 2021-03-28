@@ -51,7 +51,7 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	background-image: url('../public/images/shprits.png');
+	/*background-image: url('../public/images/shprits.png');*/
 	/*background-color: cyan;*/
 	display: grid;
 	place-items: center;
@@ -63,7 +63,7 @@
 }
 
 .ONas .dots {
-	background-image: url('../public/images/dots/3x8.png');
+	/*background-image: url('../public/images/dots/3x8.png');*/
 	/*background-color: navy;*/
 	background-size: 100% 100%;
 	position: absolute;

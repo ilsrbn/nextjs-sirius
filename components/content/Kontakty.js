@@ -4,8 +4,13 @@ function Kontakty() {
 			className="Kontakty slide">
 			<div className="image__container" data-swiper-parallax={ -50 }>
 				<div className="cyan" />
-				<div className="dots" />
-				<div className="picha" />
+				<img
+					src="/images/dots/6x9.png"
+					className="dots" />
+				<img
+					src="/images/map.png"
+					alt="Map"
+					className="picha" />
 			</div>
 			<div className="bigContainer">
 			<div className="container__text firstContainer">
@@ -52,7 +57,7 @@ function Kontakty() {
 				<a href="#partners" rel="noreferrer">ПАРТНЕРЫ</a>
 				<a href="#services" rel="noreferrer">УСЛУГИ</a>
 				<a href="#team" rel="noreferrer">КОМАНДА</a>
-				<a href="#contacts" rel="noreferrer">КОНТАКТЫ</a></div>
+				</div>
 			</div>
 		</div>)
 

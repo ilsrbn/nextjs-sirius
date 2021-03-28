@@ -104,17 +104,17 @@
 }
 
 .slide1 .image__container {
-  background-image: url('../public/images/doctor.png');
+  /*background-image: url('../public/images/doctor.png');*/
   /*background-color: gray;*/
 }
 
 .slide2 .image__container {
-  background-image: url('../public/images/uslugi/3-min.jpg');
+  /*background-image: url('../public/images/uslugi/3-min.jpg');*/
   /*background-color: yellow;*/
 }
 
 .slide3 .image__container {
-  background-image: url('../public/images/uslugi/5-min.jpg');
+  /*background-image: url('../public/images/uslugi/5-min.jpg');*/
   /*background-color: purple;*/
 }
 
@@ -122,7 +122,7 @@
   position: absolute;
   left: 0;
   bottom: 5vh;
-  background-image: url('../public/images/dots/5x4_2.png');
+  /*background-image: url('../public/images/dots/5x4_2.png');*/
   /*background-color: blue;*/
   height: 22vh;
   width: 21vw;

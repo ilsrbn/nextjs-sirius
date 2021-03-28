@@ -12,7 +12,7 @@
 }
 
 .Partnery .odrex__logo {
-	background-image: url('../public/images/odrex__logo.png');
+	/*background-image: url('../public/images/odrex__logo.png');*/
 	/*background-color: #888;*/
 	background-size: 100% 100%;
 	width: 25vw;
@@ -52,7 +52,7 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	background-image: url('../public/images/odrex.png');
+	/*background-image: url('../public/images/odrex.png');*/
 	/*background-color: gold;*/
 	display: grid;
 	place-items: center;
@@ -64,7 +64,7 @@
 }
 
 .Partnery .dots {
-	background-image: url('../public/images/dots/3x8.png');
+	/*background-image: url('../public/images/dots/3x8.png');*/
 	/*background-color: silver;*/
 	background-size: 100% 100%;
 	position: absolute;

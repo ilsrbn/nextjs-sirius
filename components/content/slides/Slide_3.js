@@ -10,8 +10,13 @@ function Slide3() {
 					<div className="text">записаться</div>
 				</span>
 			</div>
-			<div className="dots" />
-			<div className="image__container" data-swiper-parallax="-20%" />
+			<img
+				src="/images/dots/5x4_2.png"
+				className="dots" />
+			<img
+				src="/images/uslugi/5-min.jpg"
+				className="image__container"
+				data-swiper-parallax="-20%" />
 		</div>
 	)
 }

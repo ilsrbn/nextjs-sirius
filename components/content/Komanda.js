@@ -46,7 +46,10 @@ function Komanda() {
 				observeParents={ true }
 				>
 				<SwiperSlide className="team__card main_card">
-					<div className="portrait portrait_1" />
+					<img
+						src="/images/doctors/1.png"
+						className="portrait portrait_1"
+						alt="Валькевич Денис Вячеславович. Главный врач, челюстно-лицевой хирург, стоматолог-ортопед, хирург-имплантолог" />
 					<div className="text">
 						<span className="tire" />
 						<div className='name'>Валькевич Денис Вячеславович</div>
@@ -54,7 +57,10 @@ function Komanda() {
 					<div className="role">Главный врач, челюстно-лицевой хирург, стоматолог-ортопед, хирург-имплантолог</div>
 				</SwiperSlide>
 				<SwiperSlide className="team__card">
-					<div className="portrait portrait_2" />
+					<img
+						src="/images/doctors/2.png"
+						className="portrait portrait_2"
+						alt="Горовая Алёна Викторовна. Стоматолог - терапевт, детский стоматолог" />
 					<div className="text">
 						<span className="tire" />
 						<div className='name'>Горовая Алёна Викторовна</div>
@@ -62,7 +68,10 @@ function Komanda() {
 					<div className="role">Стоматолог - терапевт, детский стоматолог</div>
 				</SwiperSlide>
 				<SwiperSlide className="team__card">
-					<div className="portrait portrait_3" />
+					<img
+						src="/images/doctors/3.png"
+						alt="Бычковский Александр Александрович. Стоматолог - терапевт, хирург"
+						className="portrait portrait_3" />
 					<div className="text">
 						<span className="tire" />
 						<div className='name'>Бычковский Александр Александрович</div>
@@ -70,7 +79,10 @@ function Komanda() {
 					<div className="role">Стоматолог - терапевт, хирург</div>
 				</SwiperSlide>
 				<SwiperSlide className="team__card">
-					<div className="portrait portrait_4" />
+					<img 
+						src="/images/doctors/4.png"
+						alt="Лашина Екатерина Владимировна. Стоматолог - терапевт, детский стоматолог"
+						className="portrait portrait_4" />
 					<div className="text">
 						<span className="tire" />
 						<div className='name'>Лашина Екатерина Владимировна</div>
@@ -78,7 +90,10 @@ function Komanda() {
 					<div className="role">Стоматолог - терапевт, детский стоматолог</div>
 				</SwiperSlide>
 				<SwiperSlide className="team__card">
-					<div className="portrait portrait_5" />
+					<img
+						src="/images/doctors/5.png"
+						alt="Данилов Сергей Александрович. Врач - стоматолог"
+						className="portrait portrait_5" />
 					<div className="text">
 						<span className="tire" />
 						<div className='name'>Данилов Сергей Александрович</div>

@@ -21,7 +21,8 @@
 
 .logo {
   height: 12vh;
-  width: 25vh;
+  margin-left: 2vw;
+  width: 28vh;
   background-image: url('../public/images/siriusdentodessa.jpg');
   background-size: 100% 100%;
 }

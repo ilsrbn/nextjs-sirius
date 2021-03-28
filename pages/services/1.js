@@ -14,8 +14,13 @@ function FirstService() {
 			</div>
 			<div className="image__container" data-swiper-parallax={ -50 }>
 				<div className="cyan" />
-				<div className="dots" />
-				<div className="picha" />
+				<img
+					src="/images/dots/3x8.png"
+					className="dots" />
+				<img
+					src="/images/uslugi/1-min.jpg"
+					className="picha"
+					alt="Doctor" />
 			</div>
 		</div>)
 }

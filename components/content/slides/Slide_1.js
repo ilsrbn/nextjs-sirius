@@ -10,8 +10,13 @@ function Slide1() {
 					<div className="text">ЧИТАТЬ ДАЛЬШЕ</div>
 				</span>
 			</div>
-			<div className="dots" />
-			<div className="image__container" data-swiper-parallax="-20%" />
+			<img
+				src="/images/dots/5x4_2.png"
+				className="dots" />
+			<img
+				src="/images/doctor.png"
+				className="image__container"
+				data-swiper-parallax="-20%" />
 		</div>
 	)
 }

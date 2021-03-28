@@ -4,8 +4,12 @@ function ONas() {
 			className="ONas slide">
 			<div className="image__container" data-swiper-parallax={ -50 }>
 				<div className="cyan" />
-				<div className="dots" />
-				<div className="picha" />
+				<img 
+					src="/images/dots/3x8.png"
+					className="dots" />
+				<img
+					src="/images/shprits.png"
+					className="picha" />
 			</div>
 			<div className="container__text">
 				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>О<h2> НАС</h2>.</h1>

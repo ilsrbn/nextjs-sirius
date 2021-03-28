@@ -129,27 +129,29 @@
 }
 
 .firstCouple .firstCard .card__icon {
-	background-image: url('../public/images/icon_1.svg');
+	/*background-image: url('../public/images/icon_1.svg');*/
 }
 
 .firstCouple .secondCard .card__icon {
-	background-image: url('../public/images/icon_2.svg');
+	/*background-image: url('../public/images/icon_2.svg');*/
 }
 
 .secondCouple .firstCard .card__icon {
-	background-image: url('../public/images/icon_3.svg');
+	/*background-image: url('../public/images/icon_3.svg');*/
 }
 
 .secondCouple .secondCard .card__icon {
-	background-image: url('../public/images/icon_4.svg');
+	/*background-image: url('../public/images/icon_4.svg');*/
 }
 
 .thirdCouple .firstCard .card__icon {
-	background-image: url('../public/images/den.png');
+	/*background-image: url('../public/images/den.png');*/
+	filter: invert(1);
 }
 
 .thirdCouple .secondCard .card__icon {
-	background-image: url('../public/images/icon_6.png');
+	/*background-image: url('../public/images/icon_6.png');*/
+	filter: invert(1);
 }
 
 .kakoy-to_block {
@@ -162,7 +164,7 @@
 }
 
 .kakoy-to_block .pickcha {
-	background-image: url('../public/images/chel.png');
+	/*background-image: url('../public/images/chel.png');*/
 	/*background-color: red;*/
 	position: absolute;
 	right: 0;
@@ -175,7 +177,7 @@
 }
 
 .kakoy-to_block .dots {
-	background-image: url('../public/images/dots/6x9.png');
+	/*background-image: url('../public/images/dots/6x9.png');*/
 	/*background-color: rgba(0, 0, 250, 0.6);*/
 	position: absolute;
 	background-size: 100% 100%;

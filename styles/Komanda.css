@@ -44,27 +44,27 @@
 }
 
 .portrait_1 {
-	background-image: url('../public/images/doctors/1.png');
+	/*background-image: url('../public/images/doctors/1.png');*/
 	/*background-color: red;*/
 }
 
 .portrait_2 {
-	background-image: url('../public/images/doctors/2.png');
+	/*background-image: url('../public/images/doctors/2.png');*/
 	/*background-color: orange;*/
 }
 
 .portrait_3 {
-	background-image: url('../public/images/doctors/3.png');
+	/*background-image: url('../public/images/doctors/3.png');*/
 	/*background-color: yellow;*/
 }
 
 .portrait_4 {
-	background-image: url('../public/images/doctors/4.png');
+	/*background-image: url('../public/images/doctors/4.png');*/
 	/*background-color: skyblue;*/
 }
 
 .portrait_5 {
-	background-image: url('../public/images/doctors/5.png');
+	/*background-image: url('../public/images/doctors/5.png');*/
 	/*background-color: blue;*/
 }
 
@@ -85,19 +85,17 @@
 }
 
 .team__card .name {
-	font-family: 'Futura PT Book';
+	font-family: 'Futura PT Medium';
 	font-weight: 500;
-	font-size: 2.3vh;
+	font-size: 2.6vh;
 	color: black;
-	text-shadow: 0 0 0.8vh rgba(114, 208, 190, 0);
-	transition-property: color, text-shadow;
+	transition-property: color;
 	transition-duration: 150ms;
 	transition-timing-function: ease-in;
 }
 
 .team__card:hover .name {
 	color: #00625a;
-	text-shadow: 0 0 0.8vh rgba(114, 208, 190, 0.05);
 }
 
 .main_card .name {
@@ -112,9 +110,6 @@
 }
 
 
-/*.Komanda .swiper-slide-active .name {
-	color: #12ccbf;
-}*/
 
 
 .team__card .role {

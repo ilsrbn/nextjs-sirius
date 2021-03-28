@@ -90,37 +90,37 @@
 }
 
 .Service_1 .picha {
-	background-image: url('../public/images/uslugi/1-min.jpg');
+	/*background-image: url('../public/images/uslugi/1-min.jpg');*/
 	/*background-color: cyan;*/
 }
 
 .Service_2 .picha {
-	background-image: url('../public/images/uslugi/2-min.jpg');
+	/*background-image: url('../public/images/uslugi/2-min.jpg');*/
 	/*background-color: yellow;*/
 }
 
 .Service_3 .picha {
-	background-image: url('../public/images/uslugi/3-min.jpg');
+	/*background-image: url('../public/images/uslugi/3-min.jpg');*/
 	/*background-color: green;*/
 }
 
 .Service_4 .picha {
-	background-image: url('../public/images/uslugi/4-min.jpg');
+	/*background-image: url('../public/images/uslugi/4-min.jpg');*/
 	/*background-color: purple;*/
 }
 
 .Service_5 .picha {
-	background-image: url('../public/images/uslugi/5-min.jpg');
+	/*background-image: url('../public/images/uslugi/5-min.jpg');*/
 	/*background-color: gray;*/
 }
 
 .Service_6 .picha {
-	background-image: url('../public/images/uslugi/6-min.jpg');
+	/*background-image: url('../public/images/uslugi/6-min.jpg');*/
 	/*background-color: black;*/
 }
 
 .something .dots {
-	background-image: url('../public/images/dots/3x8.png');
+	/*background-image: url('../public/images/dots/3x8.png');*/
 	/*background-color: gray;*/
 	background-size: 100% 100%;
 	position: absolute;
