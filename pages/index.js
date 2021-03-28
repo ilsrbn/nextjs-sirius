@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Home from '../components/Content'
 import Header from '../components/Header'
+import Home from '../components/Content'
 import Sidebar from '../components/Sidebar'
 
 

@@ -5,8 +5,6 @@ import Slide1 from './slides/Slide_1';
 import Slide2 from './slides/Slide_2';
 import Slide3 from './slides/Slide_3';
 
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
 function Glavnaya() {
 	SwiperCore.use([Navigation, Parallax, Autoplay, Keyboard, Pagination]);
 	const slides_description = ['СОВРЕМЕННЫЕ РЕШЕНИЯ ЛЕЧЕНИЯ', 'ДЕТСКАЯ СТОМАТОЛОГИЯ', 'ЧЕЛЮСТНО-ЛИЦЕВАЯ ХИРУРГИЯ'];
@@ -48,8 +46,8 @@ function Glavnaya() {
 			<Slide3 />
 		</SwiperSlide>
 		<div className="nav__button__accesoir"></div>
-		<div className="prev nav__button"><ArrowForwardIosIcon /></div>
-		<div className="next nav__button"><ArrowForwardIosIcon /></div>
+		<div className="prev nav__button"><img src="/images/arrow.svg" /></div>
+		<div className="next nav__button"><img src="/images/arrow.svg" /></div>
 		<div className="nav__button__pagination"></div>
 		</Swiper>
 		)

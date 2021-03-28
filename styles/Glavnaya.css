@@ -67,8 +67,6 @@
 }
 
 .nav__button {
-  font-size: 3vh;
-  color: white;
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -83,6 +81,10 @@
   transition-property: background;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
+}
+
+.nav__button img {
+  height: 6vh;
 }
 
 .nav__button:hover {
