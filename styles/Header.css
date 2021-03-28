@@ -34,19 +34,14 @@
 }
 
 .CallIcon {
-  color: #00d3bd;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in;
-}
-
-.CallIcon:hover {
-  color: #00625a;
+  width: 4vh;
+  height: 4vh;
 }
 
 .phoneNumber {
-  font-weight: 400;
+  font-family: "Futura PT Book";
+  font-size: 2.2vh;
+  font-weight: 500;
   margin: 1vh;
 }
 
@@ -70,23 +65,22 @@
 
 .FacebookIcon {
   cursor: pointer;
-  background-color: #3c57a4; 
-  color: white;
+  background-color: #1a388f;
   border-radius: 5px;
   margin: 1vh;
   transition: background-color 150ms ease-in;
 }
 
 .FacebookIcon:hover {
-  background-color: #1a388e;
+  background-color: #1a386f;
 }
 
 .InstagramIcon {
   cursor: pointer;
   background-color: #9b458e;
   margin: 1vh;
-  border-radius: 7px; 
-  color: white;
+  border-radius: 4px; 
+  fill: white;
   transition: background-color 150ms ease-in;
 }
 .InstagramIcon:hover {
@@ -103,7 +97,7 @@
 }
 
 .YouTubeIcon:hover {
-  background-color: #b62a18;
+  background-color: #b23d2f;
 }
 
 .header p {

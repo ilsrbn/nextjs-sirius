@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, Keyboard } from 'swiper';
 
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
 function Komanda() {
 	SwiperCore.use([Navigation, Pagination, Scrollbar, Keyboard]);
 	return (
