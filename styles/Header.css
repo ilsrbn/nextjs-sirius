@@ -111,3 +111,45 @@
   margin-top: 3.892vh;
   font-size: 1.85vh;
 }
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  padding: 5vh 5vw;
+  text-align: center;
+}
+.popup-title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7.36vh;
+  letter-spacing: 2px;
+  line-height: 7vh;
+  padding: 0;
+  color: black;
+  margin-bottom: 5vh;
+}
+
+.popup-content {
+  width: 100%;
+  font-size: 3vh;
+}
+
+.popup-phone {
+  display: inline-block;
+  padding: 2vh 0;
+  color: white;
+  font-family: "Bebas Neue";
+  font-size: 8vh;
+  line-height: 9vh;
+  border-radius: 2px;
+  background-color: #c83e3b;
+  width: 100%;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
