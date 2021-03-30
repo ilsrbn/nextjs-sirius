@@ -65,7 +65,7 @@
 .ONas .dots {
 	/*background-image: url('../public/images/dots/3x8.png');*/
 	/*background-color: navy;*/
-	background-size: 100% 100%;
+	background-size: cover;
 	position: absolute;
 	top: 5%;
 	right: 2%;
