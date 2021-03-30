@@ -1,7 +1,6 @@
 .Sidebar {
   background-color: white;
-  z-index: 5;
-  position: fixed;
+  float: left;
   left: 0;
   top: 13.9vh;
   height: 86.1vh;

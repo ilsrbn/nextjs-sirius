@@ -1,0 +1,98 @@
+.deactivated-popup {
+
+
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition-property: opacity, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: ease-in;
+	
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.active-popup {
+	visibility: visible;
+	position: fixed;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition-property: opacity, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: ease-in;
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 100;
+}
+
+.popup-outer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	cursor: pointer;
+}
+
+.popup-inner {
+	position: relative;
+	padding: 5vh;
+	max-width: 65%;
+	max-height: 70%;
+	background-color: white;
+}
+
+.close-btn {
+	font-size: 6vh;
+	height: 4vh;
+	width: 6vh;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+	transform: translate(-1vh, -1vh);
+
+	transition: color 100ms ease-in;
+	cursor: pointer;
+}
+
+.close-btn:hover {
+	color: #00625a;
+}
+
+.popup-title p {
+	font-size: 6vh;
+	text-align: center;
+	padding-bottom: 5vh; 
+}
+
+.popup-content {
+	font-size: 3vh;
+	padding-bottom: 5vh;
+	text-align: center; 
+}
+
+.popup-phone {
+	width: 100%;
+	font-family: "Bebas Neue";
+	padding: 2vh;
+	background-color: #c83e3b;
+	font-size: 6vh;
+	color: white;
+	text-align: center;
+}

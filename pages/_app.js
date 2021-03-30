@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 
 import '../styles/Header.css'
+import '../styles/Popup.css'
 import '../styles/Sidebar.css'
 import '../styles/Content.css'
 
