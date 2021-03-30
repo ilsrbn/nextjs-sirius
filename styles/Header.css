@@ -1,3 +1,7 @@
+.solomon {
+  height: 13.9vh;
+}
+
 .header {
   display: flex;
   flex-direction: row;
