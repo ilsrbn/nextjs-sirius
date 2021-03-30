@@ -91,7 +91,7 @@
 .Kontakty .dots {
 	/*background-image: url('../public/images/dots/6x9.png');*/
 	/*background-color: green;*/
-	background-size: 100% 100%;
+	background-size: cover;
 	position: absolute;
 	top: 8%;
 	left: 5%;

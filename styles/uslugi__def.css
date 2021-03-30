@@ -14,7 +14,6 @@
 	margin: 0 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .something h1 {
@@ -45,6 +44,7 @@
 }
 
 .something a {
+	margin-bottom: 5vh;
 	display: inline-block;
 	font-size: 5vh;
 	text-decoration: none;
@@ -122,11 +122,11 @@
 .something .dots {
 	/*background-image: url('../public/images/dots/3x8.png');*/
 	/*background-color: gray;*/
-	background-size: 100% 100%;
+	background-size: cover;
 	position: absolute;
 	top: 5%;
 	left: 2%;
 	height: 85%;
-	width: 33%;
+	width: 28%;
 	z-index: 3;
 }
