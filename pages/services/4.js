@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Header from '../../components/Header'
+import Services_Sidebar from '../../components/Services_Sidebar'
 
 function ForthService() {
 	return (
+		<>
+		<Header />
+		<Services_Sidebar />
 		<div className="something Service_4">
 			<div className='container__text'>
 			<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
@@ -25,7 +30,8 @@ CAD-CAM, безметалловая керамика, металлокерами
 					className="picha"
 					alt="Doctor" />
 			</div>
-		</div>)
+		</div>
+		< />)
 }
 
 export default ForthService;

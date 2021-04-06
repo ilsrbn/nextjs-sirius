@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Header from '../../components/Header'
+import Services_Sidebar from '../../components/Services_Sidebar'
 
 function SixthService() {
 	return (
+		<>
+		<Header />
+		<Services_Sidebar />
 		<div className="something Service_6">
 			<div className='container__text'>
 			<Link href="/#services"><a>&larr;</a></Link>
@@ -32,6 +37,7 @@ function SixthService() {
 					alt="Doctor" />
 			</div>
 		</div>
+		< />
 		)
 }
 
