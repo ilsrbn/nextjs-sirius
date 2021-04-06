@@ -2,7 +2,17 @@ import Popup from './Popup'
 
 import React , { useState } from 'react'
 
+import Link from 'next/link'
+
+
+import useTranslation from 'next-translate/useTranslation'
+import { useRouter } from 'next/router'
+
 function Header() {
+
+	let router = useRouter();
+
+	const { t, lang } = useTranslation('common')
 
 	const [buttonPopup, setButtonPopup] = useState(false);
 	const changeState = () => {
@@ -12,6 +22,15 @@ function Header() {
 	return (
 		<div className="solomon">
 			<div className="header">
+				<ul>
+					{router.locales.map((locale) => (
+						<li key={locale}>
+							<Link href={router.asPath} locale={locale}>
+								<a>{locale}</a>
+							</Link>
+						</li>
+						))}
+				</ul>
 				<div className="logo" />
 				<div className="buttons">
 		 			<img
@@ -22,7 +41,7 @@ function Header() {
 		 			<button
 		 				className="emergency"
 		 				onClick={changeState}>
-		 				ЭКСТРЕННАЯ ПОМОЩЬ
+		 				{t("header_1")}
 					</button>
 
 		 			<a

@@ -11,9 +11,12 @@ import Uslugi from './content/Uslugi'
 import Komanda from './content/Komanda'
 import Kontakty from './content/Kontakty'
 
+import useTranslation from 'next-translate/useTranslation'
+
 
 export default function Home() {
-  var menu =[" ГЛАВНАЯ", " О НАС", " ПАРТНЕРЫ", " УСЛУГИ", " КОМАНДА", " КОНТАКТЫ"];
+  let { t, lang } = useTranslation('common')
+  var menu =[ t('sidebar_1'), " О НАС", " ПАРТНЕРЫ", " УСЛУГИ", " КОМАНДА", " КОНТАКТЫ"];
   SwiperCore.use([Navigation, Keyboard, Mousewheel, Pagination, Parallax, HashNavigation]);
 
   return (
