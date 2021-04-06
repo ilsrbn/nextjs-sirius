@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import Header from '../../components/Header'
+import Services_Sidebar from '../../components/Services_Sidebar'
 
 function FifthService() {
 	return (
+		<>
+		<Header />
+		<Services_Sidebar />
 		<div className="something Service_5">
 			<div className='container__text'>
 			<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
@@ -24,7 +29,8 @@ function FifthService() {
 					className="picha"
 					alt="Doctor" />
 			</div>
-		</div>)
+		</div>
+		< />)
 }
 
 export default FifthService;
