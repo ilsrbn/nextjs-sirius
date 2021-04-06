@@ -15,9 +15,29 @@ import '../styles/Komanda.css'
 import '../styles/Kontakty.css'
 import '../styles/uslugi__def.css'
 
+import { motion } from 'framer-motion'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps, router }) {
+  return (
+  	<motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
+ 		 	pageInitial: {
+   		opacity: 0,
+   		transition: {
+   			duration: 0.2,
+   			delay: 0
+   		},
+ 		},
+ 		 	pageAnimate: {
+    	opacity: 1,
+    	transition: {
+    		duration: 0.2,
+    		delay: 0
+    	},
+  	},
+		}}>
+  <Component {...pageProps} />
+</motion.div>
+)
 }
 
 export default MyApp
