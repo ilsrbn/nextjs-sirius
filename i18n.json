@@ -1,8 +1,8 @@
 {
-	"locales": ["ru", "en", "ua"],
-	"defaultLocale": "en",
-	"pages": {
-		"*": ["common"],
-		"/services/": ["services"]
-	},
+  "locales": ["en", "ru", "ua"],
+  "defaultLocale": "ru",
+  "pages": {
+    "*": ["common"],
+    "/services": ["services"]
+  }
 }
