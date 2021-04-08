@@ -1,3 +1,6 @@
-const nextTranslate = require('next-translate')
-
-module.exports = nextTranslate()
+module.exports = {
+	i18n: {
+		locales: ['ru', 'en', 'ua'],
+		defaultLocale: 'ru'
+	}
+}

@@ -7,6 +7,54 @@
   width: 17.2vw;
 }
 
+.language_selector {
+  position: absolute;
+  font-weight: bold;
+  top: 4vh;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 4vw;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.active_locale {
+  display: flex;
+  text-align: center;
+}
+
+.active_locale a {
+  font-family: "Futura PT Medium";
+  color: #12ccbf;
+  text-decoration: none;
+}
+
+.active_locale:hover a {
+  transition-property: color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in;
+  color: #00e6d6;
+}
+
+.disabled_locale {
+  text-align: center;
+  margin: 0;
+}
+
+.disabled_locale a {
+  font-family: "Futura PT Medium";
+  transition-property: color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in;
+  color: #818181;
+}
+
+.disabled_locale:hover a {
+  color: #00625a;
+}
+
 .SidebarList {
   width: 100%;
   height: 100%;
@@ -49,7 +97,7 @@
   color: #00e6d6;
 }
 
-.Sidebar .tire {
+.Sidebar .swiper-pagination-bullet .tire {
   display: inline-block;
   color: #818181;
   opacity: 0;

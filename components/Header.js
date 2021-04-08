@@ -1,18 +1,17 @@
 import Popup from './Popup'
 
 import React , { useState } from 'react'
-
 import Link from 'next/link'
 
 
-import useTranslation from 'next-translate/useTranslation'
+import {en, ru, ua} from '../translations/Header'
 import { useRouter } from 'next/router'
 
 function Header() {
 
 	let router = useRouter();
 
-	const { t, lang } = useTranslation('common')
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 
 	const [buttonPopup, setButtonPopup] = useState(false);
 	const changeState = () => {
@@ -22,15 +21,6 @@ function Header() {
 	return (
 		<div className="solomon">
 			<div className="header">
-				<ul>
-					{router.locales.map((locale) => (
-						<li key={locale}>
-							<Link href={router.asPath} locale={locale}>
-								<a>{locale}</a>
-							</Link>
-						</li>
-						))}
-				</ul>
 				<div className="logo" />
 				<div className="buttons">
 		 			<img
@@ -41,7 +31,7 @@ function Header() {
 		 			<button
 		 				className="emergency"
 		 				onClick={changeState}>
-		 				{t("header_1")}
+		 				{curloc.emergency}
 					</button>
 
 		 			<a
@@ -77,13 +67,11 @@ function Header() {
 							<div className="popup-title">
 		 						<button onClick={changeState} className="close-btn">&times;</button>
 		 						<p>
-		 						ЭКСТРЕННАЯ
-		 						СТОМАТОЛОГИЧЕСКАЯ ПОМОЩЬ
+		 						{curloc.popup.title}
 		 						</p>
 		 					</div>
 		 					<div className="popup-content">
-		 						Круглосуточно оказываем неотложную помощь всем пациентам с острой зубной болью
-		 						и челюстно-лицевыми травмами.
+		 						{curloc.popup.content}
 		 					</div>
 		 					<div className="popup-phone">
 		 						+38 066 125 86 31

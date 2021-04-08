@@ -52,7 +52,7 @@ function Kontakty() {
 			<div className="footer">
 			<div className="text">SIRIUS-DENT 2021</div>
 				<div className="links">
-				<a href="#main" rel="noreferrer">ГЛАВНАЯ</a>
+				<a href="" rel="noreferrer">ГЛАВНАЯ</a>
 				<a href="#about" rel="noreferrer">О НАС</a>
 				<a href="#partners" rel="noreferrer">ПАРТНЕРЫ</a>
 				<a href="#services" rel="noreferrer">УСЛУГИ</a>

@@ -11,12 +11,17 @@ import Uslugi from './content/Uslugi'
 import Komanda from './content/Komanda'
 import Kontakty from './content/Kontakty'
 
-import useTranslation from 'next-translate/useTranslation'
+import {en, ru, ua} from '../translations/Sidebar'
+import { useRouter } from 'next/router'
 
 
 export default function Home() {
-  let { t, lang } = useTranslation('common')
-  var menu =[ t('sidebar_1'), " О НАС", " ПАРТНЕРЫ", " УСЛУГИ", " КОМАНДА", " КОНТАКТЫ"];
+  let router = useRouter();
+
+  let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
+  var menu = curloc.sidebar
+
   SwiperCore.use([Navigation, Keyboard, Mousewheel, Pagination, Parallax, HashNavigation]);
 
   return (

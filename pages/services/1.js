@@ -1,23 +1,25 @@
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
+import { useRouter } from 'next/router'
 
-import useTranslation from 'next-translate/useTranslation'
+import {en, ru, ua} from '../../translations/1'
 
 function FirstService() {
 
-	let {t, lang} = useTranslation('services')
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	return (
 		<>
 		<Header />
 		<Services_Sidebar />
 		<div className="something Service_1">
 			<div className='container__text'>
-				<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
+				<Link href="/#services" locale={router.locale} className="linkBack"><a>&larr;</a></Link>
 				<div className='morecont'>
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{t('services_1_p')}</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.title}</h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					На протяжении последних лет мы часто используем в своей практике такой вид анестезии как седация или контролируемый медикаментозный сон. Это состояние при котором пациент (взрослый или ребенок) спит во время лечения. Таким образом полностью устраняется стрессовый фактор и появляется возможность эффективно лечить пациентов с фобиями, повышенным рвотным рефлексом и т.д.
+					{curloc.p}
 				</p>
 				</div>
 				
