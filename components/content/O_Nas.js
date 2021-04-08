@@ -1,4 +1,12 @@
+import { useRouter } from 'next/router'
+import {en, ru, ua} from '../../translations/oNas'
+
+
 function ONas() {
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
 	return (
 		<div
 			className="ONas slide">
@@ -12,15 +20,13 @@ function ONas() {
 					className="picha" />
 			</div>
 			<div className="container__text">
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>О<h2> НАС</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.h1}<h2>{curloc.h2}</h2></h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					Мы работаем с ... года и за эти годы эффективно оказали помощь
-					тысячам пациентов и достигли успехов во всех направлениях современной
-					стоматологии и челюстно-лицевой хирургии.
+					{curloc.p}
 				</p>
 				<span className="Slide1__button">
 					<div className="icon">&rarr;</div>
-					<div className="text">ЧИТАТЬ ДАЛЬШЕ</div>
+					<div className="text">{curloc.button}</div>
 				</span>
 			</div>
 		</div>)

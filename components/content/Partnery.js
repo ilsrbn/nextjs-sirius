@@ -1,4 +1,11 @@
+import { useRouter } from 'next/router'
+import {en, ru, ua} from '../../translations/Partners'
+
 function Partnery() {
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
 	return (
 		<div
 			className="Partnery slide">
@@ -19,14 +26,11 @@ function Partnery() {
 						data-swiper-parallax={ -80 } />
 				</a>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					Медицинский дом Odrex - это ведушая многопрофильная частная клиника Одессы,
-					созданная с учетом успешного опыта мировой медицины для оказания профессиональной
-					медицинской помощи взрослым и детям. Сегодня медицнский дом Odrex не имеет аналогов
-					на юге Украины по уровню оснащения и качеству оказываемых услуг.
+					{curloc.p}
 				</p>
 				<a href="https://odrex.ua" rel="noreferrer"><span className="Slide1__button">
 					<div className="icon">&rarr;</div>
-					<div className="text">ПЕРЕЙТИ НА САЙТ</div>
+					<div className="text">{curloc.button}</div>
 				</span></a>
 			</div>
 		</div>)

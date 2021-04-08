@@ -2,7 +2,15 @@ import Link from 'next/link'
 import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
 
+import { useRouter } from 'next/router'
+
+import {en, ru, ua} from '../../translations/6'
+
+
 function SixthService() {
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	return (
 		<>
 		<Header />
@@ -11,17 +19,16 @@ function SixthService() {
 			<div className='container__text'>
 			<Link href="/#services"><a>&larr;</a></Link>
 				<div className='morecont'>
-					<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>ЧЕЛЮСТНО-ЛИЦЕВАЯ<h2> ХИРУРГИЯ</h2>.</h1>
+					<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.title}</h1>
 					<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					Высококвалифицированым персоналом нашей клиники проводятся
-хирургические операции при различных патологиях челюстно-лицевой области и шеи:
+						{curloc.p}
 					</p>
 					<ul>
-					<li>- Хирургическое лечение переломов челюстей и костей лицевого черепа</li>
-					<li>- Ранения мягких тканей лица и шеи</li>
-					<li>- Хирургическое лечение воспалительных заболеваний челюстно-лицевой области</li>
-					<li>- Устранение последствий раннее полученных травм (пластическая хирургия)</li>
-					<li>- Лечение новообразований, как доброкачественных, так и злокачественных, полости рта и ч.л.о.</li>
+					<li>{curloc.l1}</li>
+					<li>{curloc.l2}</li>
+					<li>{curloc.l3}</li>
+					<li>{curloc.l4}</li>
+					<li>{curloc.l5}</li>
 					</ul>
 				</div>
 				

@@ -1,11 +1,11 @@
 export const en = {
-	title: 'Терапевтична стоматологiя',
-	p: "Нашими лiкарями з використанням найсучасніших матерiалiв i передових технологiй проводяться:",
-	li1: "— Дiагностичнi консультацiї",
-	li2: "— Професiйна гiгiєна",
-	li3: "— Лiкування карiеса та кореневих каналiв зубiв ",
-	li4: "— Армування (укрiплення) зубiв перед протезуванням ",
-	li5: "— Художнi реставрацiї зубiв"
+	title: 'General and restorative dentistry',
+	p: "Using the most modern materials and advanced technologies, our doctors carry out:",
+	li1: "— Diagnostic consultations",
+	li2: "— Professional hygiene",
+	li3: "— Treatment of caries and root canals",
+	li4: "— Strengthening (strengthening) of teeth before prosthetics",
+	li5: "— Art restoration of truly decayed teeth"
 }
 
 export const ru = {
@@ -23,7 +23,7 @@ export const ua = {
 	p: "Нашими лiкарями з використанням найсучасніших матерiалiв i передових технологiй проводяться:",
 	li1: "— Дiагностичнi консультацiї",
 	li2: "— Професiйна гiгiєна",
-	li3: "— Лiкування карiеса та кореневих каналiв зубiв ",
-	li4: "— Армування (укрiплення) зубiв перед протезуванням ",
+	li3: "— Лiкування карiеса та кореневих каналiв зубiв",
+	li4: "— Армування (укрiплення) зубiв перед протезуванням",
 	li5: "— Художнi реставрацiї зубiв"
 }

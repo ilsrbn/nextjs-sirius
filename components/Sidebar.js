@@ -11,7 +11,7 @@ function Sidebar() {
 			<ul className="language_selector">
 				{router.locales.map((locale) => (
 					<li key={locale} className={locale == curloc ? 'active_locale' : 'disabled_locale'}>
-						<a href={router.basePath + locale}>
+						<a href={'/' + locale}>
 							{locale}
 						</a>
 					</li>

@@ -5,9 +5,16 @@ import Slide1 from './slides/Slide_1';
 import Slide2 from './slides/Slide_2';
 import Slide3 from './slides/Slide_3';
 
+import { useRouter } from 'next/router'
+import {en, ru, ua} from '../../translations/Glavnaya'
+
 function Glavnaya() {
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
 	SwiperCore.use([Navigation, Parallax, Autoplay, Keyboard, Pagination]);
-	const slides_description = ['СОВРЕМЕННЫЕ РЕШЕНИЯ ЛЕЧЕНИЯ', 'ДЕТСКАЯ СТОМАТОЛОГИЯ', 'ЧЕЛЮСТНО-ЛИЦЕВАЯ ХИРУРГИЯ'];
+	const slides_description = curloc.desc;
 	return (
 		<Swiper
 			className="Glavnaya slide"

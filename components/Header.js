@@ -35,7 +35,7 @@ function Header() {
 					</button>
 
 		 			<a
-		 				href="https://t.me/HOPPER124"
+		 				href="https://www.facebook.com/siriusdentclinic/"
 		 				rel="noreferrer">
 		 				<img
 		 					src="/images/facebook.svg" 
