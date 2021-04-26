@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import {en, ru, ua} from '../../../translations/Slide3'
+import Link from 'next/link'
 
 function Slide3() {
 
@@ -12,10 +13,12 @@ function Slide3() {
 				<h2 data-swiper-parallax-opacity={ 0.1 } data-swiper-parallax={ -50 }>{curloc.h1}</h2>
 				<h1 data-swiper-parallax='-20%' data-swiper-parallax-opacity={ 0.1 }>{curloc.h2}</h1>
 				<p>{curloc.p}</p>
+				<Link href="/services/1"><a>
 				<span className="Slide1__button">
 					<div className="icon">&rarr;</div>
 					<div className="text">{curloc.button}</div>
 				</span>
+				</a></Link>
 			</div>
 			<img
 				src="/images/dots/5x4_2.png"

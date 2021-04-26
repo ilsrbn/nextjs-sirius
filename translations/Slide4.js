@@ -1,17 +1,17 @@
 export const ru = {
-	h1: "современные",
-	h2: "решения ЛЕЧЕНИЯ",
+	h1: "исправление прикуса",
+	h2: "без брекетов",
 	button: "ЧИТАТЬ ДАЛЬШЕ"
 }
 
 export const en = {
-	h1: "MODERN",
-	h2: "MEDICAL TECHNIQUES",
+	h1: "bite correction",
+	h2: "without braces",
 	button: "READ MORE"
 }
 
 export const ua = {
-	h1: "СУЧАСНI",
-	h2: "РIШЕННЯ ЛIКУВАННЯ",
+	h1: "виправлення прикусу",
+	h2: "без брекетiв",
 	button: "ЧИТАТИ ДАЛI"
 }

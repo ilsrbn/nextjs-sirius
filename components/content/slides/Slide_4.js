@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router'
-import {en, ru, ua} from '../../../translations/Slide1'
-import Link from 'next/link'
+import {en, ru, ua} from '../../../translations/Slide4'
 
-function Slide1() {
+function Slide4() {
 
 	let router = useRouter()
 	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
@@ -10,14 +9,12 @@ function Slide1() {
 	return (
 		<div className="container__slide">
 			<div className="container__text">
-				<h1 data-swiper-parallax='20%' data-swiper-parallax-opacity={ 0.2 }>{curloc.h1}</h1>
-				<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
-				<Link href="/services/4"><a>
+				<h1 data-swiper-parallax='-20%' data-swiper-parallax-opacity={ 0.2 }>{curloc.h1}</h1>
+				<h2 data-swiper-parallax='-40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
 				<span className="Slide1__button">
 					<div className="icon">&rarr;</div>
 					<div className="text">{curloc.button}</div>
 				</span>
-				</a></Link>
 			</div>
 			<img
 				src="/images/dots/5x4_2.png"
@@ -30,4 +27,4 @@ function Slide1() {
 	)
 }
 
-export default Slide1;
+export default Slide4;

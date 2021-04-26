@@ -1,11 +1,11 @@
 export const ru = {
-	desc: ['СОВРЕМЕННЫЕ РЕШЕНИЯ ЛЕЧЕНИЯ', 'ДЕТСКАЯ СТОМАТОЛОГИЯ', 'ЧЕЛЮСТНО-ЛИЦЕВАЯ ХИРУРГИЯ'],
+	desc: ['ИМПЛАНТАЦИЯ ЗУБОВ', 'ЧЕЛЮСТНО-ЛИЦЕВАЯ ХИРУРГИЯ', 'ЛЕЧЕНИЕ ВО СНЕ', 'ИСПРАВЛЕНИЕ ПРИКУСА БЕЗ БРЕКЕТОВ'],
 }
 
 export const ua = {
-	desc: ['СУЧАСНІ РІШЕННЯ ЛІКУВАННЯ', 'ДИТЯЧА СТОМАТОЛОГIЯ', 'ЩЕЛЕПНО-ЛИЦЕВА ХIРУРГIЯ'],
+	desc: ['IМПЛАНТАЦIЯ ЗУБIВ', 'ЩЕЛЕПНО-ЛИЦЕВА ХIРУРГIЯ', 'ЛІКУВАННЯ У СНI', 'ВИПРАВЛЕННЯ ПРИКУСУ БЕЗ БРЕКЕТIВ'],
 }
 
 export const en = {
-	desc: ['MODERN medical techniques', 'pediatric dentistry', 'Maxillofacial surgery'],
+	desc: ['DENTAL IMPLANTATION', 'Maxillofacial surgery', 'SEDATITION SURGERY', 'bite correction without braces'],
 }

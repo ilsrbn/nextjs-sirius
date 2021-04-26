@@ -21,7 +21,7 @@ function Header() {
 	return (
 		<div className="solomon">
 			<div className="header">
-				<div className="logo" />
+				<img className="logo" src={curloc.image} />
 				<div className="buttons">
 		 			<img
 		 				src="/images/phone.svg" 

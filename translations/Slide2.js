@@ -1,17 +1,17 @@
 export const ru = {
-	h1: "ДЕТСКАЯ",
-	h2: "СТОМАТОЛОГИЯ",
+	h1: "челюстно-лицевая",
+	h2: "хирургия",
 	button: "ЧИТАТЬ ДАЛЬШЕ"
 }
 
 export const en = {
-	h1: "PEDIATRIC",
-	h2: "DENTISTRY",
+	h1: "Maxillofacial",
+	h2: "surgery",
 	button: "READ MORE"
 }
 
 export const ua = {
-	h1: "ДИТЯЧА",
-	h2: "СТОМАТОЛОГIЯ",
+	h1: "ЩЕЛЕПНО-ЛИЦЕВА",
+	h2: "ХИРУРГIЯ",
 	button: "ЧИТАТИ ДАЛi"
 }

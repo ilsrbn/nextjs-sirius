@@ -5,13 +5,13 @@ export const ru = {
 }
 
 export const en = {
-	h1: "MODERN",
-	h2: "MEDICAL TECHNIQUES",
+	h1: "dental",
+	h2: "impantation",
 	button: "READ MORE"
 }
 
 export const ua = {
-	h1: "СУЧАСНI",
-	h2: "РIШЕННЯ ЛIКУВАННЯ",
+	h1: "iмплантацiя",
+	h2: "зубiв",
 	button: "ЧИТАТИ ДАЛI"
 }
