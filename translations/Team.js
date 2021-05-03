@@ -32,7 +32,7 @@ export const en = {
 	h1: "T",
 	h2: "EAM",
 	name1: "Dr. Valkevich Denis Vyacheslavovych",
-	role1: "Head of the clinic, maxillofacial surgeon, orthopedic dentist, the implant surgeonHead of the clinic, maxillofacial surgeon, orthopedic dentist, the implant surgeon",
+	role1: "Head of the clinic, maxillofacial surgeon, orthopedic dentist, the implant surgeon",
 	name2: "Dr. Gorova Olena Viktorovna",
 	role2: "Pediatric dentist and therapist of general & restorative dentistry",
 	name3: "Dr. Bychkovsky Alexander Alexandrovich",
