@@ -1,6 +1,7 @@
 .Komanda h1,
 .Komanda h2 {
 	display: inline-block;
+	font-size: 6.25vh;
 }
 
 .Komanda h1 {
@@ -10,186 +11,106 @@
 .Komanda {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .Komanda .container__text {
 	margin: 5vh 0;
+	display: none;
 }
 
 /*--slider window--*/
-.team__slider {
-	width: 80%;
-	height: 100%;
-}
-
-.team__slider .swiper-wrapper {
+.cards {
 	display: flex;
 	flex-direction: row;
-	position: relative;
-	width: 21.8475vw;
+	margin: 0 -1vw;
+	height: 86.1vh;
+	padding: 1rem 0;
+}
+
+.cards > * {
+	padding: 0 1vw;
+}
+
+.column_1 {
+	flex: 0 1 33.333%;
+	height: 100%;
+	display: flex;
+}
+
+.column_2 {
+	margin: -1vh -1vw;
+	flex-basis: 66.666%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column_2 > * {
+	padding: 1vh 1vw;
+	flex: 0 1 50%;
+	margin: 0;
 }
 
 .team__card {
-	flex: 1 0 19.6875vw;
-	height: auto;
-	margin: 0 1.08vw;
-}
-/*--slider window--*/
-.portrait {
-	width: 19.6875vw;
-	height: 38.056vh;
-	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
 }
 
-.portrait_1 {
-	/*background-image: url('../public/images/doctors/1.png');*/
-	/*background-color: red;*/
+.column_2 .card__img {
+	background-position: top;
+	background-size: 100% 150%;
 }
 
-.portrait_2 {
-	/*background-image: url('../public/images/doctors/2.png');*/
-	/*background-color: orange;*/
-}
-
-.portrait_3 {
-	/*background-image: url('../public/images/doctors/3.png');*/
-	/*background-color: yellow;*/
-}
-
-.portrait_4 {
-	/*background-image: url('../public/images/doctors/4.png');*/
-	/*background-color: skyblue;*/
-}
-
-.portrait_5 {
-	/*background-image: url('../public/images/doctors/5.png');*/
-	/*background-color: blue;*/
+.card__img {
+	flex: 1 1 80%;
+	background-size: cover;
+	background-position: top;
 }
 
 .team__card .text {
-	display: flex;
-	margin: 1vh 0;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	flex: 1 1 20%;
+	width: 100%;
 }
 
-.team__card .tire {
-	display: inline-block;
-	width: 2vw;
-	height: 1px;
-	background-color: #757575;
-	margin-right: 1.5vw;
+.team__card > * {
+	font-family: 'Futura PT Book';
+	font-weight: 400;
 }
 
 .team__card .name {
-	font-family: 'Futura PT Medium';
-	font-weight: 500;
-	font-size: 2.6vh;
+	font-size: 1.2rem;
 	color: black;
-	transition-property: color;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in;
 }
 
-.team__card:hover .name {
-	color: #00625a;
-}
-
-.main_card .name {
+.column_1 .name {
 	color: #12ccbf;
-	transition-property: color;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in;
 }
-
-.main_card:hover .name {
-	color: #00e6d6;
-}
-
-
-
 
 .team__card .role {
-	font-family: 'Futura PT Book';
-	margin-left: 3.5vw;
-	color: #757575;
-	font-weight: 400;
-	font-size: 1.9vh;
-	margin-bottom: 1vh;
+	width: 100%;
+	text-align: left;
+	font-size: 0.9rem;
+	color: #444;
 }
 
-.nextB {
-	right: -9vw;
+.img1 {
+	background-image: url('../public/images/doctors/1.png');
 }
 
-.prevB {
-	left: -9vw;
-	transform: rotate(180deg);
+.img2 {
+	background-image: url('../public/images/doctors/2.png');
 }
 
-.nav-button {
-	font-size: 2vh;
-	font-weight: 400;
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	height: 80%;
-	width: 9vw;
-	background-color: rgba(255, 255, 255, 1);
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	color: #757575;
-
-	transition-property: color, background-color;
-	transition-duration: 250ms;
-	transition-timing-function: ease-out;
+.img3 {
+	background-image: url('../public/images/doctors/3.png');
 }
 
-.Komanda .swiper-button-disabled,
-.Komanda .swiper-button-disabled:hover {
-	background-color: white;
-	color: rgba(0, 0, 0, 0);
+.img4 {
+	background-image: url('../public/images/doctors/4.png');
 }
 
-.nav-button:hover{
-	color: #128276;
-	background-color: rgba(250, 255, 255, 0.9);
-}
-
-.scrollbar {
-	height: 2px;
-	width: 15.6875vw;
-	background-color: rgba(0, 0, 0, 0.2);
-	margin: 0vh 1.08vw;
-}
-
-.swiper-scrollbar-drag {
-	background-color: #58d4bc;
-	height: 100%;
-	box-shadow: 0 0 0.7vh rgba(114, 208, 190, 0.8);
-	cursor: pointer;
-}
-
-.nab-shit {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 5vh 1vw;
-}
-
-.swiper-pagination-current {
-	color: #12cbaf;
-	text-shadow: 0 0 0.8vh rgba(114, 208, 190, 0.3);
-	transition-duration: 150ms;
-	transition-property: color;
-	transition-timing-function: ease-in;
-}
-.swiper-pagination-fraction {
-	color: #757575;
-	font-size: 1.9vh;
+.img5 {
+	background-image: url('../public/images/doctors/5.png');
 }

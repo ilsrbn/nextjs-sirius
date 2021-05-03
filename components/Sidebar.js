@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 function Sidebar() {
 	
 	let router = useRouter();
+	let locs = [en, ua, ru] 
 	let curloc = router.locale === 'en' ? 'en' : router.locale === 'ru' ? 'ru' : router.locale === 'ua' ? 'ua' : ''
 
 	return (
@@ -14,6 +15,7 @@ function Sidebar() {
 						<a href={'/' + locale}>
 							{locale}
 						</a>
+						<span className="delimiter">|</span>
 					</li>
 				))}
 			</ul>

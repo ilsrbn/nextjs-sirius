@@ -10,14 +10,23 @@
 .language_selector {
   position: absolute;
   font-weight: bold;
-  top: 4vh;
+  top: 5vh;
   z-index: 100;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 4vw;
+  flex-direction: row;
+  justify-content: space-between;
+  right: 4vw;
   list-style: none;
   text-transform: uppercase;
+}
+
+.language_selector .delimiter {
+  margin: 0 1vw;
+  color: #212121;
+}
+
+.language_selector :last-child .delimiter {
+  display: none;
 }
 
 .active_locale {
@@ -48,7 +57,7 @@
   transition-property: color;
   transition-duration: 150ms;
   transition-timing-function: ease-in;
-  color: #818181;
+  color: #212121;
 }
 
 .disabled_locale:hover a {

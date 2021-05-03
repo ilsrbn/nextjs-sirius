@@ -59,6 +59,7 @@ function Header() {
 		 					className="YouTubeIcon" />
 		 			</a>
 		 		</div>
+		 		<span />
 		 	</div>
 		 	<Popup>
 					<div className={buttonPopup ? 'active-popup' : 'deactivated-popup'}>
