@@ -53,12 +53,12 @@
 
   .Sidebar .SidebarList {
     transform: translateX(-57.2vw);
-    transition: transform 350ms ease-in;
+    transition: transform 50ms ease-in;
   }
 
   .Sidebar-show .SidebarList {
     transform: translateX(0);
-    transition: transform 350ms ease-in;
+    transition: transform 50ms ease-in;
   }
 
   .Sidebar {
@@ -67,7 +67,7 @@
     width: 0;
     background: white;
     z-index: 5000;
-    transition: width 350ms ease-in;
+    transition: width 150ms ease-in;
   }
 
   .Sidebar-show {
@@ -75,7 +75,7 @@
     width: 100vw;
     background: white;
     z-index: 5000;
-    transition: width 350ms ease-in;
+    transition: width 150ms ease-in;
   }
 
   .hamburger {
