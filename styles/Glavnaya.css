@@ -121,6 +121,7 @@
   .nav__button {
     height: 5rem;
     width: 5rem;
+    bottom: 2.5rem;
   }
 
   .prev {
@@ -135,10 +136,15 @@
     left: 10rem;
     width: calc(100vw - 10rem);
     height: 5rem;
+    bottom: 2.5rem;
   }
 
   .nav__button__pagination .number {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .nav__button__pagination .description {
+    font-size: 1.3rem;
   }
 }
 /*--Navigation Buttons*/
