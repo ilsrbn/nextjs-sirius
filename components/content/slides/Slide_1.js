@@ -10,8 +10,10 @@ function Slide1() {
 	return (
 		<div className="container__slide">
 			<div className="container__text">
-				<h1 data-swiper-parallax='20%' data-swiper-parallax-opacity={ 0.2 }>{curloc.h1}</h1>
-				<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
+				<span className="container__header">
+					<h1 data-swiper-parallax='20%' data-swiper-parallax-opacity={ 0.2 }>{curloc.h1}</h1>
+					<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
+				</span>
 				<Link href="/services/4"><a>
 				<span className="Slide1__button">
 					<div className="icon">&rarr;</div>

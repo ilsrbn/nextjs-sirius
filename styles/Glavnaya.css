@@ -118,17 +118,27 @@
     display: none;
   }
 
+  .nav__button {
+    height: 5rem;
+    width: 5rem;
+  }
+
   .prev {
     left: 0;
   }
 
   .next {
-    left: 13.89vh;
+    left: 5rem;
   }
 
   .nav__button__pagination {
-    left: calc(13.89vh * 2);
-    width: calc(100vw - (13.89vh * 2));
+    left: 10rem;
+    width: calc(100vw - 10rem);
+    height: 5rem;
+  }
+
+  .nav__button__pagination .number {
+    font-size: 1.4rem;
   }
 }
 /*--Navigation Buttons*/

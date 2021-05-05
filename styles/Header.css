@@ -175,3 +175,18 @@
   margin-top: 3.892vh;
   font-size: 1.85vh;
 }
+
+@media only screen and (max-width: 1023px) {
+  .buttons > * {
+    display: none;
+  }
+
+  .language_selector {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .language_selector .delimiter {
+    display: none;
+  }
+}

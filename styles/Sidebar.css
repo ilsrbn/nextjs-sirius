@@ -20,12 +20,12 @@
   justify-content: space-between;
   height: 3.5vh;
   display: none;
-  width: 2vw;
+  width: 2rem;
   cursor: pointer;
 }
 .hamburger_bar {
   height: 0.5vh;
-  width: 2vw;
+  width: 2rem;
   background: #666;
   margin: 0.5vh 0;
   transition-property: transform background;
@@ -39,7 +39,7 @@
 
 .hamburger-none .hamburger_bar {
   height: 0.5vh;
-  width: 2vw;
+  width: 2rem;
   background-color: #666;
   margin: 0.5vh 0;
   transform: rotate(45deg);

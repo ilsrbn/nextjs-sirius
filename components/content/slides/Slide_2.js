@@ -10,8 +10,10 @@ function Slide2() {
 	return (
 		<div className="container__slide">
 		<div className="container__text">
+			<span className="container__header">
 			<h1 data-swiper-parallax={ -70 }>{curloc.h1}</h1>
 			<h2 data-swiper-parallax={ -20 }>{curloc.h2}</h2>
+			</span>
 			<Link href="/services/6"><a>
 			<span className="Slide1__button">
 				<div className="icon">&rarr;</div>
