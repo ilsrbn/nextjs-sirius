@@ -115,6 +115,10 @@
     display: block;
   }
 
+  .Glavnaya .container__text {
+    margin-top: 5rem;
+  }
+
   .Glavnaya .container__header {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 2rem 1rem;
