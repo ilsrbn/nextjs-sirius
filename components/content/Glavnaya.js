@@ -35,7 +35,13 @@ function Glavnaya() {
 				prevEl: '.prev'
 			}}
 
-			speed={ 800 }
+			speed={ 300 }
+
+			breakpoints={{
+				1023: {
+					speed: 800
+				}
+			}}
 
 			pagination ={{
 				el: ".nav__button__pagination",
