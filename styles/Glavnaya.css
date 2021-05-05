@@ -121,7 +121,7 @@
   .nav__button {
     height: 5rem;
     width: 5rem;
-    bottom: 3.5rem;
+    bottom: 5rem;
   }
 
   .prev {
@@ -136,7 +136,7 @@
     left: 10rem;
     width: calc(100vw - 10rem);
     height: 5rem;
-    bottom: 3.5rem;
+    bottom: 5rem;
   }
 
   .nav__button__pagination .number {
