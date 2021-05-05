@@ -15,6 +15,12 @@
   flex: 1 0 82.8vw;
   position: relative;
 }
+
+@media only screen and (max-width: 1023px) {
+  .Glavnaya .swiper-slide {
+    flex: 1 0 100vw;
+  }
+}
 /*--Slider Settings--*/
 
 /*--Navigation Buttons--*/
@@ -105,5 +111,24 @@
   background-color: #01d9c4;
   color: white;
   cursor: default;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav__button__accesoir {
+    display: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    left: 13.89vh;
+  }
+
+  .nav__button__pagination {
+    left: calc(13.89vh * 2);
+    width: calc(100vw - (13.89vh * 2));
+  }
 }
 /*--Navigation Buttons*/

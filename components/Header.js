@@ -10,8 +10,8 @@ import { useRouter } from 'next/router'
 function Header() {
 
 	let router = useRouter();
-
 	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+	let curloc_str = router.locale
 
 	const [buttonPopup, setButtonPopup] = useState(false);
 	const changeState = () => {
@@ -58,8 +58,20 @@ function Header() {
 		 					alt="Youtube Icon"
 		 					className="YouTubeIcon" />
 		 			</a>
+		 			<ul className="language_selector">
+						<li className={'ru' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/ru' + router.pathname}>РУС</a>
+							<span className="delimiter">|</span>
+						</li>
+						<li className={'en' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/en' + router.pathname}>EN</a>
+							<span className="delimiter">|</span>
+						</li>
+						<li className={'ua' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/ua' + router.pathname}>УКР</a>
+						</li>
+					</ul>
 		 		</div>
-		 		<span />
 		 	</div>
 		 	<Popup>
 					<div className={buttonPopup ? 'active-popup' : 'deactivated-popup'}>

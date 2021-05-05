@@ -17,7 +17,8 @@ function Slide1() {
 					<div className="icon">&rarr;</div>
 					<div className="text">{curloc.button}</div>
 				</span>
-				</a></Link>
+				</a>
+				</Link>
 			</div>
 			<img
 				src="/images/dots/5x4_2.png"

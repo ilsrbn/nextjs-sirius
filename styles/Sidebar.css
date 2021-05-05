@@ -1,67 +1,91 @@
-.Sidebar {
+.Sidebar,
+.Sidebar-show {
+  position: absolute;
   background-color: white;
   float: left;
   left: 0;
-  top: 13.9vh;
-  height: 86.1vh;
+  /*top: 13.9vh;
+  height: 86.1vh;*/
+  top: 0;
+  height: 100vh;
   width: 17.2vw;
+  display: flex;
+  flex-direction: column;
+  transition: width 350ms ease-in-out;
 }
 
-.language_selector {
-  position: absolute;
-  font-weight: bold;
-  top: 5vh;
-  z-index: 100;
-  display: flex;
-  flex-direction: row;
+.hamburger {
+  margin: 7vh 2vw;
+  flex-direction: column;
   justify-content: space-between;
-  right: 4vw;
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.language_selector .delimiter {
-  margin: 0 1vw;
-  color: #212121;
-}
-
-.language_selector :last-child .delimiter {
+  height: 3.5vh;
   display: none;
+  width: 2vw;
+  cursor: pointer;
 }
-
-.active_locale {
-  display: flex;
-  text-align: center;
-}
-
-.active_locale a {
-  font-family: "Futura PT Medium";
-  color: #12ccbf;
-  text-decoration: none;
-}
-
-.active_locale:hover a {
-  transition-property: color;
+.hamburger_bar {
+  height: 0.5vh;
+  width: 2vw;
+  background: #666;
+  margin: 0.5vh 0;
+  transition-property: transform background;
   transition-duration: 150ms;
   transition-timing-function: ease-in;
-  color: #00e6d6;
 }
 
-.disabled_locale {
-  text-align: center;
-  margin: 0;
+.hamburger:hover .hamburger_bar {
+  background: #12ccbf;
 }
 
-.disabled_locale a {
-  font-family: "Futura PT Medium";
-  transition-property: color;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in;
-  color: #212121;
+.hamburger-none .hamburger_bar {
+  height: 0.5vh;
+  width: 2vw;
+  background-color: #666;
+  margin: 0.5vh 0;
+  transform: rotate(45deg);
 }
 
-.disabled_locale:hover a {
-  color: #00625a;
+.hamburger-none :last-child {
+  transform: rotate(-45deg) translate(1vh, -1vh);
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .Sidebar .SidebarList {
+    transform: translateX(-17.2vw);
+    transition: transform 350ms ease-in;
+  }
+
+  .Sidebar-show .SidebarList {
+    transform: translateX(0);
+    transition: transform 350ms ease-in;
+  }
+
+  .Sidebar {
+    width: 0;
+    height: 100vh;
+    width: 0;
+    background: white;
+    z-index: 5000;
+    transition: width 350ms ease-in;
+  }
+
+  .Sidebar-show {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 5000;
+    transition: width 350ms ease-in;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.hamburger-active .hamburger_bar {
+  transform: translate(0, 0) rotate(0);
+  transition: background transform 150ms ease-in;
 }
 
 .SidebarList {
@@ -106,7 +130,8 @@
   color: #00e6d6;
 }
 
-.Sidebar .swiper-pagination-bullet .tire {
+.Sidebar .swiper-pagination-bullet .tire,
+.Sidebar-show .swiper-pagination-bullet .tire {
   display: inline-block;
   color: #818181;
   opacity: 0;
@@ -116,6 +141,7 @@
   transition-duration: 150ms;
 }
 
-.Sidebar .swiper-pagination-bullet-active .tire {
+.Sidebar .swiper-pagination-bullet-active .tire,
+.Sidebar-show .swiper-pagination-bullet-active .tire {
   opacity: 1;
 }

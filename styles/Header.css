@@ -2,21 +2,21 @@
   height: 13.9vh;
 }
 
-.header {
+.header, .solomon {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 1;
-  left: 0;
+  left: 14.2vw;
   top: 0;
-  padding-left: 14.2vw;
-  padding-right: 5.47vw;
+  padding-left: 0;
+  padding-right: 3vw;
   padding-bottom: 2px;
   background: white;
   border: 0px solid white;
-  width: 100%;
+  width: 85.8vw;
   font-size: 2vh;
   height: 13.9vh;
   font-weight: 400;
@@ -36,6 +36,70 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.language_selector {
+  /*position: absolute;*/
+  /*top: 5vh;
+  z-index: 100;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*right: 4vw;*/
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: 2vw;
+}
+
+.language_selector a,
+.language_selector > *{
+  font-size: 1rem;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+}
+
+.language_selector .delimiter {
+  margin: 0 1vw;
+  color: #212121;
+}
+
+.language_selector :last-child .delimiter {
+  display: none;
+}
+
+.active_locale {
+  display: flex;
+  text-align: center;
+}
+
+.active_locale a {
+  font-family: "Futura PT Medium";
+  color: #12ccbf;
+  text-decoration: none;
+}
+
+.active_locale:hover a {
+  transition-property: color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in;
+  color: #00e6d6;
+}
+
+.disabled_locale {
+  text-align: center;
+  margin: 0;
+}
+
+.disabled_locale a {
+  font-family: "Futura PT Medium";
+  transition-property: color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in;
+  color: #212121;
+}
+
+.disabled_locale:hover a {
+  color: #00625a;
 }
 
 .CallIcon {

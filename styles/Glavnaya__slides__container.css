@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 1023px) {
+  .Glavnaya .swiper-slide {
+    flex: 1 0 100vw;
+  }
+}
+
 
 .Glavnaya .container__slide {
   height: 100%;
@@ -17,6 +23,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 .container__text {
   margin-top: 16.25vh;
@@ -64,7 +71,6 @@
   font-weight: bold;
   color: #303030;
   background: #fff;
-  font-weight: light;
   text-align: center;
   flex: 78%;
   border: 1px solid #00d5bf;
@@ -95,6 +101,57 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Glavnaya .container__slide {
+    width: 100vw;
+  }
+
+  .Glavnaya .container__text h1,
+  .Glavnaya .container__text h2 {
+    background: rgba(255, 255, 255, 0.85);
+    line-height: 3.4rem;
+  }
+
+  .slide1 .container__slide {
+    background-image: url(../public/images/doctor.png);
+  }
+
+  .slide2 .container__slide {
+    background-image: url(../public/images/uslugi/3-min.jpg);
+    background-size: 150% 100%;
+    background-position: center;
+  }
+
+  .slide3 .container__slide {
+    background-image: url(../public/images/uslugi/5-min.jpg);
+    background-size: 150% 100%;
+    background-position: center;
+  }
+
+  .slide4 .container__slide {
+    background-image: url(../public/images/doctor.png);
+  }
+
+  .Glavnaya .dots, .Glavnaya .image__container {
+    display: none;
+  }
+
+  .Slide1__button {
+    margin: 1rem 0;
+    width: auto;
+    height: auto;
+    align-items: stretch;
+  }
+
+  .Slide1__button .icon {
+    height: initial;
+  }
+
+  .Slide1__button .text {
+    font-size: 1.5rem;
+  }
 }
 
 .Glavnaya .image__container {
