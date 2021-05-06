@@ -78,7 +78,7 @@
   text-decoration: none;
 }
 
-.active_locale:hover a {
+.active_locale a:hover {
   transition-property: color;
   transition-duration: 150ms;
   transition-timing-function: ease-in;
@@ -98,7 +98,7 @@
   color: #212121;
 }
 
-.disabled_locale:hover a {
+.disabled_locale a:hover {
   color: #00625a;
 }
 

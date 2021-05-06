@@ -63,7 +63,7 @@
 /*------Font_Decalration------*/
 /*------App------*/
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -81,6 +81,6 @@ body a {
 
 .App {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 /*------App------*/
