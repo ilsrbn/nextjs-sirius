@@ -24,8 +24,13 @@
   height: auto;
 }
 
+.swiper-wrapper > * {
+  margin: 0;
+  padding: 0;
+}
+
 .swiper-slide {
-  flex: 1 0 86.1vh;
+  flex: 0 1 86.1vh;
   position: relative;
 }
 
@@ -35,7 +40,7 @@
   }
 
   .page {
-    height: 86.1%;
+    height: 86.1vh;
   }
 
   .swiper-slide {
