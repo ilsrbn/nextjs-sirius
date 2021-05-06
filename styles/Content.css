@@ -3,7 +3,7 @@
 	height: auto;
 	width: auto;
 	left: 17.2vw;
-	top: 13.9vh;
+	top: 13.9%;
   overflow: hidden;
 }
 
@@ -32,6 +32,14 @@
 @media only screen and (max-width: 1023px) {
   .content {
     left: 0;
+  }
+
+  .page {
+    height: 86.1%;
+  }
+
+  .swiper-slide {
+    flex: 0 1 86.1vh;
   }
 
   .wrapper {
