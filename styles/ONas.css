@@ -51,8 +51,6 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	/*background-image: url('../public/images/shprits.png');*/
-	/*background-color: cyan;*/
 	display: grid;
 	place-items: center;
 	width: 76.122%;
@@ -63,9 +61,6 @@
 }
 
 .ONas .dots {
-	/*background-image: url('../public/images/dots/3x8.png');*/
-	/*background-color: navy;*/
-	background-size: cover;
 	position: absolute;
 	top: 5%;
 	right: 2%;
@@ -74,3 +69,69 @@
 	z-index: 3;
 }
 /*--Image Container--*/
+
+@media only screen and (max-width: 1023px) {
+	.ONas {
+		padding: 0 5% 2%;
+		flex-direction: column;
+		height: 86.1vh;
+	}
+
+	.ONas .image__container {
+		flex: 0 1 40%;
+		width: 100%;
+		height: 40%;
+		display: grid;
+		position: static;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+	}
+
+	.ONas .dots {
+		display: none;
+	}
+
+	.ONas .cyan {
+		position: static;
+		width: 100%;
+		height: 100%;
+		grid-column: 1;
+		grid-row: 1 / 5;
+	}
+
+	.ONas .picha {
+		height: 100%;
+		position: initial;
+		width: inherit;
+		grid-column: 2 / 11;
+		grid-row: 1 / 6;
+
+		transform: translateX(0);
+		object-fit: cover;
+		object-position: bottom;
+	}
+
+	.ONas .container__text {
+		flex: 0 1 60%;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.ONas .container__text > * {
+		padding: 0;
+	}
+
+	.ONas h1 {
+		margin: 1.5rem 0 0;
+	}
+
+	.ONas p {
+		font-size: 1.5rem;
+		margin: 1rem 0 auto;
+		align-self: stretch;
+	}
+}
