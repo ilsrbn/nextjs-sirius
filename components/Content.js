@@ -25,7 +25,7 @@ export default function Home() {
   SwiperCore.use([Navigation, Keyboard, Mousewheel, Pagination, Parallax, HashNavigation]);
 
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Стоматологическая клиника Sirius-dent</title>
         <link rel="icon" href="/favicon.ico" />
@@ -84,6 +84,6 @@ export default function Home() {
       </Swiper>
       </div>
       </div>
-    </div>
+    </>
   )
 }

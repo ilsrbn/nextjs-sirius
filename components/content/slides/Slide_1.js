@@ -11,7 +11,7 @@ function Slide1() {
 		<div className="container__slide">
 			<div className="container__text">
 				<span className="container__header">
-					<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>F I X E D</h2>
+					<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>зку-F I X E D</h2>
 					<h1 data-swiper-parallax='20%' data-swiper-parallax-opacity={ 0.2 }>{curloc.h1}</h1>
 					<h2 data-swiper-parallax='40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
 				</span>
