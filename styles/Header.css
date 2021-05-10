@@ -189,4 +189,8 @@
   .language_selector .delimiter {
     display: none;
   }
+
+  .logo {
+    width: 80%;
+  }
 }

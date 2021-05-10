@@ -3,7 +3,7 @@
 	height: auto;
 	width: auto;
 	left: 17.2vw;
-	top: 13.9%;
+	top: 13.9vh;
   overflow: hidden;
 }
 
@@ -40,11 +40,11 @@
   }
 
   .page {
-    height: 86.1vh;
+    height: 100%;
   }
 
   .swiper-slide {
-    flex: 0 1 86.1vh;
+    flex: 0 1 16.666%;
   }
 
   .wrapper {
