@@ -47,7 +47,7 @@ function Komanda() {
 					<span className="team__card">
 						<div className="card__img img3" />
 						<div className="text">
-							<div className='name'>{curloc.name3}</div>
+							<div className='name special_name'>{curloc.name3}</div>
 							<div className="role">{curloc.role3}</div>
 						</div>
 					</span>

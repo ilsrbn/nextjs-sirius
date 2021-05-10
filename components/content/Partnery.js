@@ -19,7 +19,7 @@ function Partnery() {
 					className="picha" />
 			</div>
 			<div className="container__text">
-				<a href="https://odrex.ua/">
+				<a href="https://odrex.ua/" rel="noreferrer">
 					<img
 						src="images/odrex__logo.png"
 						className="odrex__logo"

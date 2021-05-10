@@ -90,7 +90,7 @@ function Uslugi() {
 				className="pickcha" />
 		</div>
 		</div>
-	</div>
+		</div>
 )
 
 }

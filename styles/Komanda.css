@@ -114,3 +114,65 @@
 .img5 {
 	background-image: url('../public/images/doctors/5.png');
 }
+
+@media only screen and (max-width: 1023px) {
+	.Komanda .container__text {
+		display: none;
+	}
+
+	.Komanda .cards {
+		padding: 5%;
+		display: grid;
+		grid-template-rows: 1fr 2fr;
+		grid-gap: 1%; 
+	}
+
+	.column_1 .team__card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.column_1 .team__card .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.column_1 .team__card .name {
+		font-size: 1.7rem;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.column_1 .team__card .role {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+
+	.column_1 .card__text > * {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.column_1 .team__card > * {
+		flex: 0 1 50%;
+		width: 100%;
+	}
+
+	.column_1 .card__img {
+		margin-right: 2%;
+	}
+
+	.Komanda .column_2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 1%;
+	}
+
+	.team__card .special_name {
+		font-size: 1.1rem;
+	}
+}
