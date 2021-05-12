@@ -18,7 +18,7 @@
   margin: 0;
   flex-direction: column;
   justify-content: center;
-  height: 16.2vh;
+  height: 13.9vh;
   display: none;
   width: 15vw;
   cursor: pointer;
@@ -121,25 +121,33 @@
 
   .Sidebar .SidebarList {
     transform: translateX(-57.2vw);
-    transition: transform 50ms ease-in;
+    height: initial;
+    transition-property: transform height;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
   }
 
   .Sidebar-show .SidebarList {
     transform: translateX(0);
-    transition: transform 50ms ease-in;
+    height: initial;
+    transition-property: transform height;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
   }
 
   .Sidebar {
     width: 0;
-    height: 100vh;
+    height: 86.1vh;
     background: white;
+    transform: translateY(13.9vh);
     z-index: 5000;
     transition: width 150ms ease-in;
   }
 
   .Sidebar-show {
-    height: 100vh;
+    height: 86.1vh;
     width: 100vw;
+    transform: translateY(13.9vh);
     background: white;
     z-index: 5000;
     transition: width 150ms ease-in;
@@ -147,6 +155,11 @@
 
   .hamburger {
     display: flex;
+    transform: translateY(-13.9vh);
+  }
+
+  .hamburger-active {
+    transform: translateY(-13.9vh);
   }
 
   .swiper-pagination-bullet {
@@ -155,5 +168,10 @@
 
   .swiper-pagination-bullet-active {
     margin-left: 6vh;
+  }
+
+  .Sidebar-show .SidebarList {
+    height: initial;
+    transform: translateY(-13.9vh);
   }
 }
