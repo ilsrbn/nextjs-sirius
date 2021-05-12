@@ -15,12 +15,13 @@ import {en, ru, ua} from '../translations/Sidebar'
 import { useRouter } from 'next/router'
 
 
-export default function Home() {
+export default function Home(props) {
   let router = useRouter();
 
   let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 
   var menu = curloc.sidebar
+
 
   SwiperCore.use([Navigation, Keyboard, Mousewheel, Pagination, Parallax, HashNavigation]);
 

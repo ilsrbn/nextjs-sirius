@@ -143,11 +143,11 @@
 	.column_1 .team__card .name {
 		font-size: 1.7rem;
 		font-weight: 700;
-		text-align: center;
+		text-align: left;
 	}
 
 	.column_1 .team__card .role {
-		text-align: center;
+		text-align: left;
 		font-size: 1.2rem;
 	}
 

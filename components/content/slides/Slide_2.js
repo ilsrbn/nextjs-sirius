@@ -16,7 +16,7 @@ function Slide2() {
 			</span>
 			<Link href="/services/6"><a>
 			<span className="Slide1__button">
-				<div className="icon">&rarr;</div>
+				<div className="icon"><img src="/images/arrow.svg" /></div>
 				<div className="text">{curloc.button}</div>
 			</span>
 			</a></Link>

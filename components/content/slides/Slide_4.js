@@ -14,7 +14,7 @@ function Slide4() {
 				<h2 data-swiper-parallax='-40%' data-swiper-parallax-opacity={ 0.5 }>{curloc.h2}</h2>
 				</span>
 				<span className="Slide1__button">
-					<div className="icon">&rarr;</div>
+					<div className="icon"><img src="/images/arrow.svg" /></div>
 					<div className="text">{curloc.button}</div>
 				</span>
 			</div>

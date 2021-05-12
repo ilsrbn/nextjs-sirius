@@ -65,18 +65,22 @@
 }
 
 .Slide1__button .text {
-  margin: 0;
   font-family: 'Bebas Neue';
   font-size: 2.3vh;
   font-weight: bold;
+  height: 100%;
+  line-height: initial;
+
   color: #303030;
   background: #fff;
-  text-align: center;
+
   flex: 78%;
   border: 1px solid #00d5bf;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
   transition-property: background color;
   transition-timing-function: ease-in-out;
   transition-duration: 150ms;
@@ -88,17 +92,11 @@
 }
 
 .Slide1__button .icon {
-  margin: 0;
-  padding-bottom: 0.5vh;
   flex: 22%;
   height: 100%;
-  font-size: 3.3vh;
-  text-align: center;
-  line-height: 1vh;
   color: white;
   background: #00d5bf;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -116,7 +114,7 @@
   }
 
   .Glavnaya .container__text {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 
   .Glavnaya .container__header {
@@ -166,7 +164,7 @@
 
   .Slide1__button .text {
     font-size: 1.5rem;
-    padding: 0.3rem 0.6rem;
+    line-height: 2.5rem;
   }
 }
 

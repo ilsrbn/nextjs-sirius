@@ -29,7 +29,7 @@ function Partnery() {
 					{curloc.p}
 				</p>
 				<a href="https://odrex.ua" rel="noreferrer"><span className="Slide1__button">
-					<div className="icon">&rarr;</div>
+					<div className="icon"><img src="/images/arrow.svg" /></div>
 					<div className="text">{curloc.button}</div>
 				</span></a>
 			</div>

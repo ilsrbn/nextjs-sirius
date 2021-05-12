@@ -15,19 +15,24 @@
 }
 
 .hamburger {
-  margin: 7vh 2vw;
+  margin: 0;
   flex-direction: column;
-  justify-content: space-between;
-  height: 3.5vh;
+  justify-content: center;
+  height: 16.2vh;
   display: none;
-  width: 2rem;
+  width: 15vw;
   cursor: pointer;
 }
+
+.hamburger-active {
+  box-shadow: 0px 4px 4px -6px gray;
+}
+
 .hamburger_bar {
   height: 0.5vh;
   width: 2rem;
   background: #666;
-  margin: 0.5vh 0;
+  margin: 0.5vh 2vw;
   transition-property: transform background;
   transition-duration: 150ms;
   transition-timing-function: ease-in;
@@ -41,46 +46,12 @@
   height: 0.5vh;
   width: 2rem;
   background-color: #666;
-  margin: 0.5vh 0;
+  margin: 0.5vh 2vw;
   transform: rotate(45deg);
 }
 
 .hamburger-none :last-child {
   transform: rotate(-45deg) translate(1vh, -1vh);
-}
-
-@media only screen and (max-width: 1023px) {
-
-  .Sidebar .SidebarList {
-    transform: translateX(-57.2vw);
-    transition: transform 50ms ease-in;
-  }
-
-  .Sidebar-show .SidebarList {
-    transform: translateX(0);
-    transition: transform 50ms ease-in;
-  }
-
-  .Sidebar {
-    width: 0;
-    height: 100vh;
-    width: 0;
-    background: white;
-    z-index: 5000;
-    transition: width 150ms ease-in;
-  }
-
-  .Sidebar-show {
-    height: 100vh;
-    width: 100vw;
-    background: white;
-    z-index: 5000;
-    transition: width 150ms ease-in;
-  }
-
-  .hamburger {
-    display: flex;
-  }
 }
 
 .hamburger-active .hamburger_bar {
@@ -144,4 +115,45 @@
 .Sidebar .swiper-pagination-bullet-active .tire,
 .Sidebar-show .swiper-pagination-bullet-active .tire {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .Sidebar .SidebarList {
+    transform: translateX(-57.2vw);
+    transition: transform 50ms ease-in;
+  }
+
+  .Sidebar-show .SidebarList {
+    transform: translateX(0);
+    transition: transform 50ms ease-in;
+  }
+
+  .Sidebar {
+    width: 0;
+    height: 100vh;
+    background: white;
+    z-index: 5000;
+    transition: width 150ms ease-in;
+  }
+
+  .Sidebar-show {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 5000;
+    transition: width 150ms ease-in;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .swiper-pagination-bullet {
+    margin-left: 2vh;
+  }
+
+  .swiper-pagination-bullet-active {
+    margin-left: 6vh;
+  }
 }
