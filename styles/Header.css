@@ -48,7 +48,7 @@
   /*right: 4vw;*/
   list-style: none;
   text-transform: uppercase;
-  margin-left: 2vw;
+  margin-right: 5vw;
 }
 
 .language_selector a,
@@ -195,9 +195,8 @@
   }
 
   .logo {
-    width: 75%;
-    margin-left: 2vw;
-    margin-right: auto;
+    width: 60vw;
+    margin: 0 auto;
     height: auto;
   }
 

@@ -32,7 +32,7 @@
   height: 0.5vh;
   width: 2rem;
   background: #666;
-  margin: 0.5vh 2vw;
+  margin: 0.5vh 5vw;
   transition-property: transform background;
   transition-duration: 150ms;
   transition-timing-function: ease-in;
@@ -46,7 +46,7 @@
   height: 0.5vh;
   width: 2rem;
   background-color: #666;
-  margin: 0.5vh 2vw;
+  margin: 0.5vh 5vw;
   transform: rotate(45deg);
 }
 

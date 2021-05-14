@@ -27,7 +27,7 @@
 	grid-template-columns: 1fr 2fr;
 	height: 86.1vh;
 	padding: 1rem;
-	grid-gap: 1rem;
+	grid-gap: 4rem;
 }
 
 /*.cards > * {
@@ -59,6 +59,7 @@
 
 .column_2 > * {
 	margin: 0;
+	width: initial;
 }
 
 .team__card {
@@ -67,13 +68,14 @@
 }
 
 .column_2 .card__img {
+	width: 70%;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .column_2 .name {
-	text-align: center;
+	text-align: left;
 }
 
 .card__img {
@@ -87,6 +89,10 @@
 .team__card .text {
 	flex: 1 1 20%;
 	width: 100%;
+}
+
+.column_2 .team__card .text {
+	width: 70%;
 }
 
 .team__card > * {
@@ -111,7 +117,11 @@
 }
 
 .column_2 .role {
-	text-align: center;
+	text-align: left;
+}
+
+.column_2 .team__card {
+	align-items: center;
 }
 
 .img1 {
@@ -193,12 +203,17 @@
 	}
 
 	.team__card .special_name {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.column_2 .card__img {
+		width: 100%;
 		background-size: cover;
 		background-position: top;
+	}
+
+	.column_2 .team__card .text {
+		width: 100%;
 	}
 
 	.column_2 .team__card .text > * {
