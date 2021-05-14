@@ -22,34 +22,42 @@
 
 /*--slider window--*/
 .cards {
-	display: flex;
-	flex-direction: row;
-	margin: 0 -1vw;
+	display: grid;
+	width: 100%; 
+	grid-template-columns: 1fr 2fr;
 	height: 86.1vh;
-	padding: 1rem 0;
+	padding: 1rem;
+	grid-gap: 1rem;
 }
 
-.cards > * {
+/*.cards > * {
 	padding: 0 1vw;
-}
+}*/
 
 .column_1 {
-	flex: 0 1 33.333%;
 	height: 100%;
+	width: 100%;
 	display: flex;
+}
+
+.column_1 .team__card .text .name {
+	font-size: 3vh;
+	font-weight: 700;
+}
+
+.column_1 .team__card .text .role {
+	font-size: 2.5vh;
 }
 
 .column_2 {
-	margin: -1vh -1vw;
-	flex-basis: 66.666%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1rem;
 }
 
 .column_2 > * {
-	padding: 1vh 1vw;
-	flex: 0 1 50%;
 	margin: 0;
 }
 
@@ -59,14 +67,21 @@
 }
 
 .column_2 .card__img {
-	background-position: top;
-	background-size: 100% 150%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.column_2 .name {
+	text-align: center;
 }
 
 .card__img {
 	flex: 1 1 80%;
+
 	background-size: cover;
-	background-position: top;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .team__card .text {
@@ -80,7 +95,7 @@
 }
 
 .team__card .name {
-	font-size: 1.2rem;
+	font-size: 2.4vh;
 	color: black;
 }
 
@@ -91,8 +106,12 @@
 .team__card .role {
 	width: 100%;
 	text-align: left;
-	font-size: 0.9rem;
+	font-size: 1.9vh;
 	color: #444;
+}
+
+.column_2 .role {
+	text-align: center;
 }
 
 .img1 {
@@ -123,14 +142,20 @@
 	.Komanda .cards {
 		padding: 5% 5% 15%;
 		display: grid;
+		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 2fr;
-		grid-gap: 4px;
+		grid-gap: 16px;
+	}
+
+	.Komanda .cards > * {
+		width: 100%;
 	}
 
 	.column_1 .team__card {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 16px;
 	}
 
 	.column_1 .team__card .text {
@@ -151,11 +176,6 @@
 		font-size: 1.2rem;
 	}
 
-	.column_1 .card__text > * {
-		text-align: center;
-		font-size: 1.5rem;
-	}
-
 	.column_1 .team__card > * {
 		flex: 0 1 50%;
 		width: 100%;
@@ -169,7 +189,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		grid-gap: 1px;
+		grid-gap: 16px;
 	}
 
 	.team__card .special_name {
@@ -178,5 +198,10 @@
 
 	.column_2 .card__img {
 		background-size: cover;
+		background-position: top;
+	}
+
+	.column_2 .team__card .text > * {
+		text-align: left;
 	}
 }
