@@ -203,7 +203,7 @@
 	}
 
 	.team__card .special_name {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.column_2 .card__img {
@@ -218,5 +218,14 @@
 
 	.column_2 .team__card .text > * {
 		text-align: left;
+	}
+
+	.column_2 .team__card .name {
+		font-weight: 700;
+		font-size: 1rem; 
+	}
+
+	.column_2 .team__card .role {
+		font-size: 0.9rem;
 	}
 }
