@@ -69,8 +69,8 @@
 
 .column_2 .card__img {
 	width: 70%;
-	background-position: center;
-	background-size: contain;
+	background-position: top;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -93,6 +93,20 @@
 
 .column_2 .team__card .text {
 	width: 70%;
+}
+
+@media only screen and (min-width: 1500px) {
+	.column_2 .card__img {
+		width: 65%;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.column_2 .team__card .text {
+		width: 65%;
+	}
+
 }
 
 .team__card > * {
@@ -201,6 +215,7 @@
 		grid-template-rows: 1fr 1fr;
 		grid-gap: 16px;
 	}
+
 
 	.team__card .special_name {
 		font-size: 1rem;

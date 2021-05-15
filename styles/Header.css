@@ -48,7 +48,7 @@
   /*right: 4vw;*/
   list-style: none;
   text-transform: uppercase;
-  margin-right: 5vw;
+  margin: 0 3vw;
 }
 
 .language_selector a,
@@ -188,6 +188,7 @@
   .language_selector {
     display: flex;
     flex-direction: column;
+    margin: 0 5vw;
   }
 
   .language_selector .delimiter {

@@ -169,6 +169,7 @@
 }
 
 .Glavnaya .image__container {
+  float: right;
   width: 51.321875vw;
   height: 86.1vh;
   background-size: cover;
