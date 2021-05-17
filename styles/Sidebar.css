@@ -28,37 +28,6 @@
   box-shadow: 0px 4px 4px -6px gray;
 }
 
-.hamburger_bar {
-  height: 0.5vh;
-  width: 2rem;
-  background: #666;
-  margin: 0.5vh 5vw;
-  transition-property: transform background;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in;
-}
-
-.hamburger:hover .hamburger_bar {
-  background: #12ccbf;
-}
-
-.hamburger-none .hamburger_bar {
-  height: 0.5vh;
-  width: 2rem;
-  background-color: #666;
-  margin: 0.5vh 5vw;
-  transform: rotate(45deg);
-}
-
-.hamburger-none :last-child {
-  transform: rotate(-45deg) translate(1vh, -1vh);
-}
-
-.hamburger-active .hamburger_bar {
-  transform: translate(0, 0) rotate(0);
-  transition: background transform 150ms ease-in;
-}
-
 .SidebarList {
   width: 100%;
   height: 100%;
@@ -118,60 +87,81 @@
 }
 
 @media only screen and (max-width: 1023px) {
-
-  .Sidebar .SidebarList {
-    transform: translateX(-57.2vw);
-    height: initial;
-    transition-property: transform height;
-    transition-duration: 50ms;
-    transition-timing-function: ease-in;
-  }
-
-  .Sidebar-show .SidebarList {
-    transform: translateX(0);
-    height: initial;
-    transition-property: transform height;
-    transition-duration: 50ms;
-    transition-timing-function: ease-in;
-  }
-
-  .Sidebar {
-    width: 0;
+  .Sidebar,
+  .Sidebar-show {
+    position: absolute;
+    left: 0;
+    top: 8vh;
+    width: 100vw;
     height: 92vh;
-    background: white;
-    transform: translateY(8vh);
-    z-index: 5000;
-    transition: width 150ms ease-in;
+    z-index: 5;
+    transition: left 150ms ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .Sidebar-show {
-    height: 92vh;
-    width: 100vw;
-    transform: translateY(8vh);
-    background: white;
-    z-index: 5000;
-    transition: width 150ms ease-in;
+    left: -110vw;
+  }
+
+  .SidebarList {
+    height: initial;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    flex: 0 1 45%;
+  }
+
+  .SidebarList > * {
+    margin-left: 0;
+    transition: margin-left 150ms ease-in;
+  }
+
+  .SidebarList .swiper-pagination-bullet-active {
+    margin-left: 5%;
   }
 
   .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    transform: translateY(-8vh);
+    width: 20vw;
   }
 
-  .hamburger-active {
-    transform: translateY(-8h);
+  .hamburger_bar {
+    height: 0.5vh;
+    width: 10vw;
+    background: #666;
   }
 
-  .swiper-pagination-bullet {
-    margin-left: 2vh;
+  .hamburger-active .hamburger_bar {
+    margin: 0.5vh 5vw;
+    transform: translate(0, 0) rotate(0);
+    transition-property: transform margin;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
   }
 
-  .swiper-pagination-bullet-active {
-    margin-left: 6vh;
+  .hamburger-none .hamburger_bar {
+    margin: -0.25vh 5vw;
+    transform: rotate(45deg);
+
+    transition-property: transform margin;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
   }
 
-  .Sidebar-show .SidebarList {
-    height: initial;
-    transform: translateY(-8vh);
+  .hamburger-none :last-child {
+    transform: rotate(-45deg);
+  }
+
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 55%;
   }
 }

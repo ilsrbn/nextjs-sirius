@@ -14,12 +14,47 @@ function Sidebar(props) {
 
 	return (
 		<nav className={props.burger ? "Sidebar" : "Sidebar-show"}>
-			<nav className={props.burger ? 'hamburger hamburger-active' : 'hamburger hamburger-none'} onClick={props.changeBurger}>
+			<nav className={props.burger ? 'hamburger hamburger-none' : 'hamburger hamburger-active'} onClick={props.changeBurger}>
 				<span className="hamburger_bar bar1" />
 				<span className="hamburger_bar bar3" />
 			</nav>
 			<div className="SidebarList" ref={props.burgerFather} onClick={props.changeBurger}></div>
-			<div className="sidebar-buttons"></div>
+			<div className="sidebar-buttons">
+				<span className="ticket">
+					ЗАПИСАТЬСЯ НА ПРИЕМ
+				</span>
+				<span className="phoneNum">+380 66 736 37 44</span>
+				<span className="emergency">
+					СКОРАЯ ПОМОЩЬ
+				</span>
+				<span className="phoneNum">+380 66 736 37 44</span>
+				<div className="social">
+					<a
+		 				href="https://www.facebook.com/siriusdentclinic/"
+		 				rel="noreferrer">
+		 				<img
+		 					src="/images/facebook.svg" 
+		 					className="FacebookIcon"
+		 					alt="Facebook icon" />
+		 			</a>
+		 			<a
+		 				href="https://t.me/HOPPER124"
+		 				rel="noreferrer">
+		 				<img 
+		 					src="/images/instagram.svg"
+		 					alt="Instagram icon"
+		 					className="InstagramIcon" />
+		 			</a>
+		 			<a
+		 				href="https://t.me/HOPPER124"
+		 				rel="noreferrer">
+		 				<img
+		 					src="/images/youtube.svg"
+		 					alt="Youtube Icon"
+		 					className="YouTubeIcon" />
+		 			</a>
+		 		</div>
+			</div>
 		</nav>
 	)
 }
