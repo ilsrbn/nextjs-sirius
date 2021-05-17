@@ -233,7 +233,7 @@
     top: 8vh;
     right: 0;
     height: 24vh;
-    box-shadow: 0 4px 6px 4px rgba(100, 100, 100, 0.1);
+    box-shadow: 0 4px 6px 4px rgba(100, 200, 200, 0.1);
     width: inherit;
     list-style: none;
     transition: right 150ms ease-in;
@@ -248,6 +248,7 @@
     height: 8vh;
     width: 10vw;
     color: black;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
