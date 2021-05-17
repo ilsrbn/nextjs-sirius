@@ -100,6 +100,7 @@
   height: 100%;
   color: white;
   background: #00d5bf;
+  border: 1px solid #12ccbf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,11 +165,13 @@
 
   .Slide1__button .icon {
     height: initial;
+    border: 1px solid #12ccbf;
   }
 
   .Slide1__button .text {
     font-size: 1.5rem;
     line-height: 2.5rem;
+    border: 1px solid #12ccbf;
   }
 }
 

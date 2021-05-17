@@ -162,6 +162,14 @@
 		align-items: stretch;
 	}
 
+	.Partnery .Slide1__button .icon {
+		border: 1px solid #12ccbf;
+	}
+
+	.Partnery .Slide1__button .icon {
+		border: 1px solid #12ccbf;
+	}
+
 	.Partnery .Slide1__button .icon img {
 		height: 80%;
 		object-fit: contain;
