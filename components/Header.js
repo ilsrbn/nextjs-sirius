@@ -28,10 +28,10 @@ function Header() {
 			<div className="header">
 				<img className="logo" src={curloc.image} />
 				<div className="buttons">
-		 			<img
+		 			<a href="tel:+380-66-736-37-44" className="phonebut"><img
 		 				src="/images/phone.svg" 
 		 				className="CallIcon" />
-		 			<div className="phoneNumber">+38 066 125 86 31</div>
+		 			<div className="phoneNumber">+38 066 125 86 31</div></a>
 
 		 			<button
 		 				className="emergency"

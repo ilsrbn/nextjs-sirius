@@ -106,6 +106,14 @@
   color: #00625a;
 }
 
+.phonebut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: default;
+}
+
 .CallIcon {
   width: 4vh;
   height: 4vh;
@@ -116,6 +124,7 @@
   font-size: 2.2vh;
   font-weight: 500;
   margin: 1vh;
+  color: black;
 }
 
 .emergency {
@@ -197,6 +206,14 @@
     align-items: baseline;
   }
 
+  .phonebut {
+    display: block;
+  }
+
+  .phoneNumber {
+    display: none;
+  }
+
   .language_selector {
     display: flex;
     flex-direction: column;
@@ -236,7 +253,7 @@
     box-shadow: 0 4px 6px 4px rgba(100, 200, 200, 0.1);
     width: inherit;
     list-style: none;
-    transition: right 150ms ease-in;
+    transition: right 50ms ease-in;
   }
 
   .language_selector__mobile .other_locs {
@@ -263,7 +280,7 @@
   }
 
   .logo {
-    width: 40vw;
+    width: auto;
     margin: 0 auto;
     height: auto;
   }

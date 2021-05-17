@@ -19,6 +19,7 @@ function Sidebar(props) {
 				<span className="hamburger_bar bar3" />
 			</nav>
 			<div className="SidebarList" ref={props.burgerFather} onClick={props.changeBurger}></div>
+			<div className="sidebar-buttons"></div>
 		</nav>
 	)
 }
