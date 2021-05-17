@@ -163,7 +163,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex: 0 1 55%;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
     padding-left: 5%;
   }
 
@@ -171,6 +171,7 @@
   .sidebar-buttons .emergency {
     background-color: #12ccbf;
     color: white;
+    border-radius: 2px;
 
     font-family: 'Bebas Neue';
     font-weight: 700;
