@@ -42,6 +42,11 @@
 	color: #8d8d8d;
 }
 
+.Kontakty .number {
+	color: #8d8d8d;
+	cursor: default;
+}
+
 .time p {
 	color: black;
 }
@@ -192,6 +197,12 @@
 	.Kontakty .secondContainer {
 		margin: 0;
 		padding: 0 5% 0 0;
+	}
+
+	.Kontakty .number {
+		color: #12ccbf;
+		cursor: pointer;
+		text-decoration: underline;
 	}
 
 	.Kontakty .secondContainer .table {

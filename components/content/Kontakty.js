@@ -29,7 +29,7 @@ function Kontakty() {
 					{curloc.adress2}
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					<a href="tel:+380-66-736-37-44">
+					<a href="tel:+380-66-736-37-44" className="number">
 					{curloc.phone}
 					</a>
 				</p>
