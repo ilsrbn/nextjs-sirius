@@ -13,6 +13,11 @@ function Header() {
 	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	let curloc_str = router.locale
 
+	const [languagePopup, setLanguagePopup] = useState(false)
+	const changeLanguage = () => {
+		setLanguagePopup(!languagePopup)
+	}
+
 	const [buttonPopup, setButtonPopup] = useState(false);
 	const changeState = () => {
 		setButtonPopup(!buttonPopup)
@@ -71,6 +76,22 @@ function Header() {
 							<a href={'/ua' + router.pathname}>УКР</a>
 						</li>
 					</ul>
+					<div className="language_selector__mobile">
+						<span onClick={changeLanguage} className="current_loc">
+							{curloc_str}
+						</span>
+						<ul className={languagePopup ? "other_locs-active" : "other_locs"}>
+							<li className={'en' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/en' + router.pathname}>EN</a>
+							</li>
+							<li className={'ua' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/ua' + router.pathname}>УКР</a>
+							</li>
+							<li className={'ru' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/ru' + router.pathname}>РУС</a>
+							</li>
+						</ul>
+					</div>
 		 		</div>
 		 	</div>
 		 	<Popup>
