@@ -133,7 +133,8 @@
   .hamburger_bar {
     height: 0.5vh;
     width: 10vw;
-    background: #666;
+    background: #999;
+    border-radius: 10%;
   }
 
   .hamburger-active .hamburger_bar {
