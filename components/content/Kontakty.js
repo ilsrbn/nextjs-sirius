@@ -29,7 +29,9 @@ function Kontakty() {
 					{curloc.adress2}
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					{curloc.phone}					
+					<a href="tel:+380-66-736-37-44">
+					{curloc.phone}
+					</a>
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
 					{curloc.email}					
