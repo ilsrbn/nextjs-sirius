@@ -18,7 +18,7 @@
   margin: 0;
   flex-direction: column;
   justify-content: center;
-  height: 13.9vh;
+  height: 8vh;
   display: none;
   width: 15vw;
   cursor: pointer;
@@ -137,17 +137,17 @@
 
   .Sidebar {
     width: 0;
-    height: 86.1vh;
+    height: 92vh;
     background: white;
-    transform: translateY(13.9vh);
+    transform: translateY(8vh);
     z-index: 5000;
     transition: width 150ms ease-in;
   }
 
   .Sidebar-show {
-    height: 86.1vh;
+    height: 92vh;
     width: 100vw;
-    transform: translateY(13.9vh);
+    transform: translateY(8vh);
     background: white;
     z-index: 5000;
     transition: width 150ms ease-in;
@@ -155,11 +155,11 @@
 
   .hamburger {
     display: flex;
-    transform: translateY(-13.9vh);
+    transform: translateY(-8vh);
   }
 
   .hamburger-active {
-    transform: translateY(-13.9vh);
+    transform: translateY(-8h);
   }
 
   .swiper-pagination-bullet {
@@ -172,6 +172,6 @@
 
   .Sidebar-show .SidebarList {
     height: initial;
-    transform: translateY(-13.9vh);
+    transform: translateY(-8vh);
   }
 }

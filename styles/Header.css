@@ -177,8 +177,12 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .solomon {
+    height: 8vh;
+  }
   .header {
     box-shadow: 0px 4px 4px -6px gray;
+    height: 8vh;
   }
 
   .buttons > * {
@@ -196,7 +200,7 @@
   }
 
   .logo {
-    width: 60vw;
+    width: 40vw;
     margin: 0 auto;
     height: auto;
   }

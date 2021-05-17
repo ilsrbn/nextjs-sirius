@@ -37,14 +37,16 @@
 @media only screen and (max-width: 1023px) {
   .content {
     left: 0;
+    height: 92vh;
+    top: 8vh;
   }
 
   .page {
-    height: 86.1vh;
+    height: 92vh;
   }
 
   .swiper-slide {
-    flex: 0 1 86.1vh;
+    flex: 0 1 92vh;
   }
 
   .wrapper {

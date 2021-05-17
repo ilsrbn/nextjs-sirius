@@ -1,14 +1,12 @@
 /*--Slider Settings--*/
 .Glavnaya {
 	width: auto;
-	/*height: 86.1vh;*/
   height: 100%;
 }
 
 .Glavnaya .swiper-wrapper {
 	display: flex;
 	flex-direction: row;
-	/*height: 86.1vh;*/
   height: 100%;
 	width: 100%;
 }
@@ -116,6 +114,10 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .Glavnaya .swiper-wrapper {
+    height: 92vh;
+  }
+
   .nav__button__accesoir {
     display: none;
   }
