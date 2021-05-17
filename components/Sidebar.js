@@ -13,10 +13,10 @@ function Sidebar(props) {
 
 
 	return (
-		<nav className={props.burger ? "Sidebar" : "Sidebar-show"}>
-			<nav className={props.burger ? 'hamburger hamburger-none' : 'hamburger hamburger-active'} onClick={props.changeBurger}>
-				<span className="hamburger_bar bar1" />
-				<span className="hamburger_bar bar3" />
+		<nav className={props.burger ? "Sidebar-show" : "Sidebar"}>
+			<nav className={props.burger ? 'hamburger hamburger-active' : 'hamburger hamburger-none'} onClick={props.changeBurger}>
+				<span className="hamburger_bar" />
+				<span className="hamburger_bar" />
 			</nav>
 			<div className="SidebarList" ref={props.burgerFather} onClick={props.changeBurger}></div>
 			<div className="sidebar-buttons">
