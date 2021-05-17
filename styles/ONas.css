@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 1023px) {
 	.ONas {
-		padding: 0 5% 2%;
+		padding: 0 5% 15%;
 		flex-direction: column;
 		height: 86.1vh;
 	}
@@ -131,11 +131,11 @@
 	}
 
 	.ONas p {
-		font-size: 1.2rem;
+		font-size: 3vh;
 		margin: 1rem 0 3rem;
 	}
 
 	.ONas .Slide1__button {
-		margin: 0 0 auto;
+		margin: auto 0 0;
 	}
 }

@@ -38,6 +38,7 @@ export default function Home(props) {
           className="page"
           direction='vertical'
           slidesPerView='auto'
+          simulateTouch={ false }
           parallax={ true }
           keyboard={{
             enabled: true,

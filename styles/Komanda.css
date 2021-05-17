@@ -193,6 +193,7 @@
 		font-size: 1.7rem;
 		font-weight: 700;
 		text-align: left;
+		width: 100%;
 	}
 
 	.column_1 .team__card .role {
@@ -206,7 +207,6 @@
 	}
 
 	.column_1 .card__img {
-		margin-right: 2%;
 	}
 
 	.Komanda .column_2 {
@@ -225,10 +225,13 @@
 		width: 100%;
 		background-size: cover;
 		background-position: top;
+		height: 100%;
+		margin-bottom: auto;
 	}
 
 	.column_2 .team__card .text {
 		width: 100%;
+		height: initial;
 	}
 
 	.column_2 .team__card .text > * {
@@ -237,10 +240,12 @@
 
 	.column_2 .team__card .name {
 		font-weight: 700;
-		font-size: 1rem; 
+		font-size: 1rem;
+		height: initial; 
 	}
 
 	.column_2 .team__card .role {
 		font-size: 0.9rem;
+		display: none;
 	}
 }
