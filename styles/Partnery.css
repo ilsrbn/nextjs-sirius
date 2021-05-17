@@ -159,6 +159,13 @@
 	}
 
 	.Partnery .Slide1__button {
-		margin: auto 0 0;
+		align-items: stretch;
+	}
+
+	.Partnery .Slide1__button .icon img {
+		height: 80%;
+		object-fit: contain;
+		object-position: center;
+		margin: 0;
 	}
 }

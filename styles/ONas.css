@@ -137,5 +137,14 @@
 
 	.ONas .Slide1__button {
 		margin: auto 0 0;
+		display: flex;
+		align-items: stretch;
+	}
+
+	.ONas .Slide1__button .icon img {
+		height: 80%;
+		object-fit: contain;
+		object-position: center;
+		margin: 0;
 	}
 }

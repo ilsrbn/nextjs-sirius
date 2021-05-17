@@ -253,11 +253,16 @@
     box-shadow: 0 4px 6px 4px rgba(100, 200, 200, 0.1);
     width: inherit;
     list-style: none;
-    transition: right 50ms ease-in;
+
+    opacity: 1;
+    transition-property: top opacity;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
   }
 
   .language_selector__mobile .other_locs {
-    right: -20vw;
+    top: -24vh;
+    opacity: 0;
   }
 
   .language_selector__mobile .other_locs a,
