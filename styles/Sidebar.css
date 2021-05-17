@@ -163,5 +163,53 @@
     justify-content: space-between;
     align-items: flex-start;
     flex: 0 1 55%;
+    padding-bottom: 15vh;
+    padding-left: 5%;
   }
+
+  .sidebar-buttons .ticket,
+  .sidebar-buttons .emergency {
+    background-color: #12ccbf;
+    color: white;
+
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 3vh;
+
+    padding: 2vh 4vw;
+
+    margin: 0;
+  }
+
+  .sidebar-buttons .emergency {
+    background-color: #c83e3b;
+  }
+
+  .sidebar-buttons .phoneNum {
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+  }
+
+  .sidebar-buttons .social {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-buttons .social a {
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-buttons img {
+    height: 75%;
+    margin: 0;
+    padding: 0;
+  }
+
 }
