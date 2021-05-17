@@ -141,6 +141,14 @@
 		align-items: stretch;
 	}
 
+	.ONas .Slide1__button .icon {
+		border: 1px solid #12ccbf;
+	}
+
+	.ONas .Slide1__button .icon {
+		border: 1px solid #12ccbf;
+	}
+
 	.ONas .Slide1__button .icon img {
 		height: 80%;
 		object-fit: contain;
