@@ -34,7 +34,7 @@
   position: relative;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
   .content {
     left: 0;
     height: 92vh;

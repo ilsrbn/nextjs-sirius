@@ -28,7 +28,7 @@ function Header() {
 			<div className="header">
 				<img className="logo" src={curloc.image} />
 				<div className="buttons">
-		 			<a href="tel:+380-66-736-37-44" className="phonebut"><img
+		 			<a className="phonebut" onClick={changeState}><img
 		 				src="/images/phone.svg" 
 		 				className="CallIcon" />
 		 			<div className="phoneNumber">+38 066 125 86 31</div></a>
@@ -107,9 +107,9 @@ function Header() {
 		 					<div className="popup-content">
 		 						{curloc.popup.content}
 		 					</div>
-		 					<div className="popup-phone">
+		 					<a href="tel:+380-66-736-37-44"><div className="popup-phone">
 		 						+38 066 125 86 31
-		 					</div>
+		 					</div></a>
 						</div>
 		 			</div>
 				</Popup>

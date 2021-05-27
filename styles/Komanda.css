@@ -158,7 +158,7 @@
 	background-image: url('../public/images/doctors/5.png');
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
 	.Komanda .container__text {
 		display: none;
 	}

@@ -14,6 +14,10 @@
   transition: width 350ms ease-in-out;
 }
 
+.sidebar-buttons {
+  display: none;
+}
+
 .hamburger {
   margin: 0;
   flex-direction: column;
@@ -86,10 +90,10 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
   .Sidebar,
   .Sidebar-show {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 8vh;
     width: 100vw;
@@ -128,6 +132,8 @@
     left: 0;
     display: flex;
     width: 20vw;
+    background-color: white;
+    z-index: 5;
   }
 
   .hamburger_bar {
@@ -165,6 +171,11 @@
     flex: 0 1 55%;
     padding-bottom: 10vh;
     padding-left: 5%;
+  }
+
+  .sidebar-buttons a {
+    color: #12ccbf;
+    font-weight: 700;
   }
 
   .sidebar-buttons .ticket,

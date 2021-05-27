@@ -4,10 +4,17 @@ import Services_Sidebar from '../../components/Services_Sidebar'
 
 import { useRouter } from 'next/router'
 
+import React, { useState } from 'react'
+
 import {en, ru, ua} from '../../translations/3'
 
 
 function ThirdService() {
+
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
 
 	let router = useRouter()
 	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
@@ -15,7 +22,7 @@ function ThirdService() {
 	return (
 		<>
 		<Header />
-		<Services_Sidebar />
+		<Services_Sidebar burger={burger} changeBurger={changeBurger} />
 		<div className="something Service_3">
 			<div className='container__text'>
 			<Link href="/#services" className="linkBack"><a><img src="/images/arrow.svg" /></a></Link>

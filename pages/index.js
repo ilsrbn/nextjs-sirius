@@ -12,9 +12,9 @@ export default function App() {
 		setBurger(!burger)
 	}
 	
-   return (
+  return (
     <div className="App">
       <Header /><Sidebar burger={burger} changeBurger={changeBurger} /><Home />
     </div>
-)
+	)
 }

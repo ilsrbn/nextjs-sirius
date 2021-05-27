@@ -3,16 +3,23 @@ import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
 import { useRouter } from 'next/router'
 
+import React, { useState } from 'react'
+
 import {en, ru, ua} from '../../translations/1'
 
 function FirstService() {
+
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
 
 	let router = useRouter()
 	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	return (
 		<>
 		<Header />
-		<Services_Sidebar />
+		<Services_Sidebar burger={burger} changeBurger={changeBurger} />
 		<div className="something Service_1">
 			<div className='container__text'>
 				<Link href="/#services" locale={router.locale} className="linkBack"><a><img src="/images/arrow.svg" /></a></Link>

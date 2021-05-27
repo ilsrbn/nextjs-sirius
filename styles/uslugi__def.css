@@ -141,3 +141,14 @@
 	width: 28%;
 	z-index: 3;
 }
+
+@media only screen and (max-width: 767px) {
+	.something {
+		left: 0;
+		padding: 0 5vw;
+	}
+
+	.something .image__container {
+		display: none;
+	}
+}
