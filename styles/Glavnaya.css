@@ -1,19 +1,25 @@
 /*--Slider Settings--*/
 .Glavnaya {
 	width: auto;
-	height: 86.1vh;
+  height: 100%;
 }
 
 .Glavnaya .swiper-wrapper {
 	display: flex;
 	flex-direction: row;
-	height: 86.1vh;
+  height: 100%;
 	width: 100%;
 }
 
 .Glavnaya .swiper-slide {
   flex: 1 0 82.8vw;
   position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .Glavnaya .swiper-slide {
+    flex: 1 0 100vw;
+  }
 }
 /*--Slider Settings--*/
 
@@ -105,5 +111,44 @@
   background-color: #01d9c4;
   color: white;
   cursor: default;
+}
+
+@media only screen and (max-width: 767px) {
+  .Glavnaya .swiper-wrapper {
+    height: 92vh;
+  }
+
+  .nav__button__accesoir {
+    display: none;
+  }
+
+  .nav__button {
+    height: 5rem;
+    width: 5rem;
+    top: 0;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    left: 5rem;
+  }
+
+  .nav__button__pagination {
+    left: 10rem;
+    width: calc(100vw - 10rem);
+    height: 5rem;
+    top: 0;
+  }
+
+  .nav__button__pagination .number {
+    font-size: 1.2rem;
+  }
+
+  .nav__button__pagination .description {
+    font-size: 1.2rem;
+  }
 }
 /*--Navigation Buttons*/

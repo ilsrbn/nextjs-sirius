@@ -1,19 +1,32 @@
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
+import { useRouter } from 'next/router'
+
+import React, { useState } from 'react'
+
+import {en, ru, ua} from '../../translations/1'
 
 function FirstService() {
+
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	return (
 		<>
 		<Header />
-		<Services_Sidebar />
+		<Services_Sidebar burger={burger} changeBurger={changeBurger} />
 		<div className="something Service_1">
 			<div className='container__text'>
-				<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
+				<Link href="/#services" locale={router.locale} className="linkBack"><a><img src="/images/arrow.svg" /></a></Link>
 				<div className='morecont'>
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>ЛЕЧЕНИЕ<h2> ЗУБОВ ВО СНЕ</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.title1}<h2>{curloc.title2}</h2></h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					На протяжении последних лет мы часто используем в своей практике такой вид анестезии как седация или контролируемый медикаментозный сон. Это состояние при котором пациент (взрослый или ребенок) спит во время лечения. Таким образом полностью устраняется стрессовый фактор и появляется возможность эффективно лечить пациентов с фобиями, повышенным рвотным рефлексом и т.д.
+					{curloc.p}
 				</p>
 				</div>
 				

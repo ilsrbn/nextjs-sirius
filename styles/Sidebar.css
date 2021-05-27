@@ -1,10 +1,35 @@
-.Sidebar {
+.Sidebar,
+.Sidebar-show {
+  position: absolute;
   background-color: white;
   float: left;
   left: 0;
-  top: 13.9vh;
-  height: 86.1vh;
+  /*top: 13.9vh;
+  height: 86.1vh;*/
+  top: 0;
+  height: 100vh;
   width: 17.2vw;
+  display: flex;
+  flex-direction: column;
+  transition: width 350ms ease-in-out;
+}
+
+.sidebar-buttons {
+  display: none;
+}
+
+.hamburger {
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 8vh;
+  display: none;
+  width: 15vw;
+  cursor: pointer;
+}
+
+.hamburger-active {
+  box-shadow: 0px 4px 4px -6px gray;
 }
 
 .SidebarList {
@@ -49,7 +74,8 @@
   color: #00e6d6;
 }
 
-.Sidebar .tire {
+.Sidebar .swiper-pagination-bullet .tire,
+.Sidebar-show .swiper-pagination-bullet .tire {
   display: inline-block;
   color: #818181;
   opacity: 0;
@@ -59,6 +85,143 @@
   transition-duration: 150ms;
 }
 
-.Sidebar .swiper-pagination-bullet-active .tire {
+.Sidebar .swiper-pagination-bullet-active .tire,
+.Sidebar-show .swiper-pagination-bullet-active .tire {
   opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .Sidebar,
+  .Sidebar-show {
+    position: fixed;
+    left: 0;
+    top: 8vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    transition: left 150ms ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Sidebar-show {
+    left: -110vw;
+  }
+
+  .SidebarList {
+    height: initial;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    flex: 0 1 45%;
+  }
+
+  .SidebarList > * {
+    margin-left: 0;
+    transition: margin-left 150ms ease-in;
+  }
+
+  .SidebarList .swiper-pagination-bullet-active {
+    margin-left: 5%;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 20vw;
+    background-color: white;
+    z-index: 5;
+  }
+
+  .hamburger_bar {
+    height: 0.5vh;
+    width: 10vw;
+    background: #999;
+  }
+
+  .hamburger-active .hamburger_bar {
+    margin: 0.5vh 5vw;
+    transform: translate(0, 0) rotate(0);
+    transition-property: transform margin;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+  }
+
+  .hamburger-none .hamburger_bar {
+    margin: -0.25vh 5vw;
+    transform: rotate(45deg);
+
+    transition-property: transform margin;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+  }
+
+  .hamburger-none :last-child {
+    transform: rotate(-45deg);
+  }
+
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 55%;
+    padding-bottom: 10vh;
+    padding-left: 5%;
+  }
+
+  .sidebar-buttons a {
+    color: #12ccbf;
+    font-weight: 700;
+  }
+
+  .sidebar-buttons .ticket,
+  .sidebar-buttons .emergency {
+    background-color: #12ccbf;
+    color: white;
+    border-radius: 2px;
+
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    font-size: 3vh;
+
+    padding: 2vh 4vw;
+
+    margin: 0;
+  }
+
+  .sidebar-buttons .emergency {
+    background-color: #c83e3b;
+  }
+
+  .sidebar-buttons .phoneNum {
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+  }
+
+  .sidebar-buttons .social {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-buttons .social a {
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-buttons img {
+    height: 75%;
+    margin: 0;
+    padding: 0;
+  }
+
 }

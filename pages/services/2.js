@@ -2,25 +2,38 @@ import Link from 'next/link'
 import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
 
+import React, { useState } from 'react'
+
+import { useRouter } from 'next/router'
+
+import {en, ru, ua} from '../../translations/2'
+
 function SecondService() {
+
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
 	return (
 		<>
 		<Header />
-		<Services_Sidebar />
+		<Services_Sidebar burger={burger} changeBurger={changeBurger} />
 		<div className="something Service_2">
 			<div className='container__text'>
-			<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
+			<Link href="/#services" className="linkBack"><a><img src="/images/arrow.svg" /></a></Link>
 				<div className='morecont'>
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>ТЕРАПЕВТИЧЕСКАЯ<h2> СТОМАТОЛОГИЯ</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.title}</h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					Нашими врачами с использованием самых современных материалов и передовых технологий проводятся:</p>
+					{curloc.p}</p>
 				<ul>
-					<li>— Диагностические консультации</li>
-					<li>— Профессиональная гигиена</li>
-					<li>— Лечение кариеса и корневых каналов зубов</li>
-					<li>— Армирование (укрепление) зубов перед протезированием</li>
-					<li>— Художественные реставрации истинно разрушенных зубов
-					стоматологии и челюстно-лицевой хирургии.</li>
+					<li>{curloc.li1}</li>
+					<li>{curloc.li2}</li>
+					<li>{curloc.li3}</li>
+					<li>{curloc.li4}</li>
+					<li>{curloc.li5}</li>
 				</ul>
 				</div>
 				

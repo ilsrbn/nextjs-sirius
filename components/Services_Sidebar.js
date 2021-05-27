@@ -1,16 +1,67 @@
 import Link from 'next/link'
+import { en, ru, ua } from '../translations/Sidebar'
+import { useRouter } from 'next/router'
 
-function Services_Sidebar() {
+import React, { useState } from 'react'
+
+
+
+
+function Services_Sidebar(props) {
+
+	
+
+	let router = useRouter()
+
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+	let curloc_str = router.locale
 		
 	return (
-		<nav className="Sidebar">
+		<nav className={props.burger ? "Sidebar-show" : "Sidebar"}>
+			<nav className={props.burger ? 'hamburger hamburger-active' : 'hamburger hamburger-none'} onClick={props.changeBurger}>
+				<span className="hamburger_bar" />
+				<span className="hamburger_bar" />
+			</nav>
 			<div className="SidebarList">
-			<Link href="/#main"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>ГЛАВНАЯ</a></Link>
-			<Link href="/#about"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>О НАС</a></Link>
-			<Link href="/#partners"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>ПАРТНЕРЫ</a></Link>
-			<Link href="/#services"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>УСЛУГИ</a></Link>
-			<Link href="/#team"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>КОМАНДА</a></Link>
-			<Link href="/#contacts"><a className="swiper-pagination-bullet"><div className="tire">&horbar;</div>КОНТАКТЫ</a></Link>
+			{curloc['sidebar'].map((element) => (
+				<Link key={element} href={curloc['sidebar_data_hash'][curloc['sidebar'].indexOf(element, 0)]}><a className='swiper-pagination-bullet'><div className='tire'>―</div>{element}</a></Link>
+				))}
+			</div>
+			<div className="sidebar-buttons">
+				<a href="tel:+380-66-736-37-44" className="ticket">
+					{curloc.sign}
+				</a>
+				<a href="tel:+380-66-736-37-44" className="phoneNum">+380 66 736 37 44</a>
+				<a href="tel:+380-66-736-37-44" className="emergency">
+					{curloc.emergency}
+				</a>
+				<a href="tel:+380-66-736-37-44" className="phoneNum">+380 66 736 37 44</a>
+				<div className="social">
+					<a
+		 				href="https://www.facebook.com/siriusdentclinic/"
+		 				rel="noreferrer">
+		 				<img
+		 					src="/images/facebook.svg" 
+		 					className="FacebookIcon"
+		 					alt="Facebook icon" />
+		 			</a>
+		 			<a
+		 				href="https://t.me/HOPPER124"
+		 				rel="noreferrer">
+		 				<img 
+		 					src="/images/instagram.svg"
+		 					alt="Instagram icon"
+		 					className="InstagramIcon" />
+		 			</a>
+		 			<a
+		 				href="https://t.me/HOPPER124"
+		 				rel="noreferrer">
+		 				<img
+		 					src="/images/youtube.svg"
+		 					alt="Youtube Icon"
+		 					className="YouTubeIcon" />
+		 			</a>
+		 		</div>
 			</div>
 		</nav>
 	)

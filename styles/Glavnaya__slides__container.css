@@ -10,17 +10,28 @@
   position: relative;
 }
 
+@media only screen and (max-width: 767px) {
+  .Glavnaya .swiper-slide {
+    flex: 1 0 100vw;
+  }
+
+  .Glavnaya .swiper-wrapper {
+    height: 92vh;
+  }
+}
+
 
 .Glavnaya .container__slide {
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2rem 0rem;
 }
+
 
 .container__text {
   margin-top: 16.25vh;
-  margin-left: 2vw;
 }
 
 .container__text h1,
@@ -58,19 +69,22 @@
 }
 
 .Slide1__button .text {
-  margin: 0;
   font-family: 'Bebas Neue';
   font-size: 2.3vh;
   font-weight: bold;
+  height: 100%;
+  line-height: initial;
+
   color: #303030;
   background: #fff;
-  font-weight: light;
-  text-align: center;
+
   flex: 78%;
   border: 1px solid #00d5bf;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
   transition-property: background color;
   transition-timing-function: ease-in-out;
   transition-duration: 150ms;
@@ -82,24 +96,89 @@
 }
 
 .Slide1__button .icon {
-  margin: 0;
-  padding-bottom: 0.5vh;
   flex: 22%;
   height: 100%;
-  font-size: 3.3vh;
-  text-align: center;
-  line-height: 1vh;
   color: white;
   background: #00d5bf;
+  border: 1px solid #12ccbf;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .Glavnaya .container__slide {
+    width: 100vw;
+    background-size: 200% 110%;
+    background-position: left;
+  }
+
+  .container__text h1,
+  .container__text h2 {
+    display: block;
+  }
+
+  .Glavnaya .container__text {
+    margin-top: 10rem;
+  }
+
+  .Glavnaya .container__header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slide1 .container__slide {
+    background-image: url(../public/images/doctor.png);
+    background-size: 280% 150%;
+  }
+
+  .slide2 .container__slide {
+    background-image: url(../public/images/uslugi/3-min.jpg);
+    background-position: center;
+    background-size: 250% 110%;
+  }
+
+  .slide3 .container__slide {
+    background-image: url(../public/images/uslugi/5-min.jpg);
+
+  }
+
+  .slide4 .container__slide {
+    background-image: url(../public/images/doctor.png);
+    background-size: 280% 150%;
+  }
+
+  .Glavnaya .dots, .Glavnaya .image__container {
+    display: none;
+  }
+
+  .Slide1__button {
+    margin: 1rem 0;
+    width: auto;
+    height: auto;
+    align-items: stretch;
+    border: 2px solid #12ccbf;
+  }
+
+  .Slide1__button .icon {
+    height: initial;
+    border: 1px solid #12ccbf;
+  }
+
+  .Slide1__button .text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border: 1px solid #12ccbf;
+  }
+}
+
 .Glavnaya .image__container {
+  float: right;
   width: 51.321875vw;
-  height: 86.1vh;
+  height: 92vh;
   background-size: cover;
 }
 

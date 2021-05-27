@@ -23,10 +23,12 @@
 .something h1 {
 	display: inline-block;
 	border-bottom: 1px solid #d2d2d2;
+	color: #12ccbf;
 }
 
 .something h2 {
 	display: inline;
+	color: #12ccbf;
 }
 
 .something p {
@@ -50,14 +52,19 @@
 .something a {
 	margin-bottom: 5vh;
 	display: inline-block;
-	font-size: 5vh;
 	text-decoration: none;
-	color: rgba(0, 0, 0, 1);
-	transition: color 150ms ease-in;
 }
 
-.something a:hover {
-	color: #00625a;
+.something a img {
+	height: 5vh;
+	background-color: black;
+	filter: invert(1);
+	transform: rotate(180deg) translateX(0);
+	transition: transform 150ms ease-in;
+}
+
+.something a:hover img {
+	transform: rotate(180deg) translateX(2vw);
 }
 
 .something .image__container {
@@ -133,4 +140,15 @@
 	height: 85%;
 	width: 28%;
 	z-index: 3;
+}
+
+@media only screen and (max-width: 767px) {
+	.something {
+		left: 0;
+		padding: 0 5vw;
+	}
+
+	.something .image__container {
+		display: none;
+	}
 }

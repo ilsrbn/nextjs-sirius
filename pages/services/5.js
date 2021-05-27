@@ -2,19 +2,33 @@ import Link from 'next/link'
 import Header from '../../components/Header'
 import Services_Sidebar from '../../components/Services_Sidebar'
 
+import { useRouter } from 'next/router'
+
+import React, { useState } from 'react'
+
+import {en, ru, ua} from '../../translations/5'
+
 function FifthService() {
+
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
 	return (
 		<>
 		<Header />
-		<Services_Sidebar />
+		<Services_Sidebar burger={burger} changeBurger={changeBurger} />
 		<div className="something Service_5">
 			<div className='container__text'>
-			<Link href="/#services" className="linkBack"><a>&larr;</a></Link>
+			<Link href="/#services" className="linkBack"><a><img src="/images/arrow.svg" /></a></Link>
 				<div className='morecont'>
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>ХИРУРГИЧЕСКАЯ<h2> СТОМАТОЛОГИЯ</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.title}</h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					Мы проводим весь спектр хирургических вмешательств в полости рта. Опытный хирург с многолетним стажем проводит хирургическое лечение заболеваний
-пародонта, постановки дентальных имплантатов различных систем, зубосохраняющие операции, удаление зубов мудрости и т.д.
+					{curloc.p}
 				</p>
 				</div>
 				

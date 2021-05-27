@@ -3,11 +3,18 @@ import Header from '../components/Header'
 import Home from '../components/Content'
 import Sidebar from '../components/Sidebar'
 
+import React, {useState} from 'react'
+
 
 export default function App() {
-   return (
+	const [burger, setBurger] = useState(true);
+	const changeBurger = () => {
+		setBurger(!burger)
+	}
+	
+  return (
     <div className="App">
-      <Header /><Sidebar /><Home />
+      <Header /><Sidebar burger={burger} changeBurger={changeBurger} /><Home />
     </div>
-)
+	)
 }
