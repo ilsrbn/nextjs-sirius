@@ -252,26 +252,38 @@
 		border-left-width: calc((86.1vh / 6) - 7vh);
 		margin: 0;
 		height: 100%;
-		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		border: 0.417vh solid #2ac8b1;
-		border-left: 5.833vh solid #2ac8b1;
+
+		border: 0.417vh solid #12ccbf;
+		border-left: 5.833vh solid #12ccbf;
 		border-radius: 2px;
 		background-color: white;
+	}
+
+	.Cards__main-container .card:active,
+	.Cards__main-container .thirdCouple .card:active {
+		border: 0.417vh solid #2ac8b1;
+		border-right: 5.833vh solid #2ac8b1;
 	}
 
 	.Cards__main-container .card__icon {
 		margin: 0;
 		padding: 0;
-		flex: 0 1 30%;
 		height: 100%;
+		object-fit: contain;
+		max-width: 100%;
+		width: 16vh;
+		align-self: flex-start;
+		flex: 0 1 25%;
 	}
+
 
 	.Cards__main-container .card__text {
 		margin: 0;
 		padding: 0;
-		flex: 0 1 70%;
+		text-align: center;
+		width: 100%;
+		flex: 0 1 75%;
 	}
 
 	.thirdCouple .card {
