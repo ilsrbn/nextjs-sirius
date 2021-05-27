@@ -243,7 +243,9 @@
 	}
 
 	.Cards__main-container .card,
-	.Cards__main-container .thirdCouple .card {
+	.Cards__main-container .thirdCouple .card,
+	.Cards__main-container .card:hover,
+	.Cards__main-container .thirdCouple .card:hover {
 		width: 100%;
 		padding: 0.1rem 1rem;
 		border-width: 7px;
@@ -253,6 +255,10 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		border: 0.417vh solid #2ac8b1;
+		border-left: 5.833vh solid #2ac8b1;
+		border-radius: 2px;
+		background-color: white;
 	}
 
 	.Cards__main-container .card__icon {
