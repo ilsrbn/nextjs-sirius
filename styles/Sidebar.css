@@ -90,7 +90,34 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
+  .Sidebar-show {
+    width: 25vw;
+  }
+
+  .SidebarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet:hover {
+    margin-left: 12.5vw;
+    width: 100%;
+  }
+
+  .Sidebar .swiper-pagination-bullet-active .tire,
+  .Sidebar-show .swiper-pagination-bullet-active .tire,
+  .Sidebar .swiper-pagination-bullet .tire,
+  .Sidebar-show .swiper-pagination-bullet .tire {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 767.98px) {
   .Sidebar,
   .Sidebar-show {
     position: fixed;

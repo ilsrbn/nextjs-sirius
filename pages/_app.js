@@ -23,14 +23,14 @@ function MyApp({ Component, pageProps, router }) {
  		 	pageInitial: {
    		opacity: 0,
    		transition: {
-   			duration: 0.2,
+   			duration: 0.4,
    			delay: 0
    		},
  		},
  		 	pageAnimate: {
     	opacity: 1,
     	transition: {
-    		duration: 0.2,
+    		duration: 0.4,
     		delay: 0
     	},
   	},

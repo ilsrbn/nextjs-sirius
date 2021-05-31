@@ -10,7 +10,15 @@
   position: relative;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
+  .Glavnaya .swiper-slide {
+    flex: 0 1 75vw;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
   .Glavnaya .swiper-slide {
     flex: 1 0 100vw;
   }
@@ -26,7 +34,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 0rem;
+  padding: 0rem 0rem;
 }
 
 
@@ -104,6 +112,83 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .Glavnaya .container__slide {
+    width: 75vw;
+    background-size: 200% 110%;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container__text h1,
+  .container__text h2 {
+    display: block;
+    text-align: center;
+  }
+
+  .Glavnaya .container__text {
+    margin-top: 10rem;
+    width: 80%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .Glavnaya .container__header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slide1 .container__slide {
+    background-image: url(../public/images/doctor.png);
+    background-size: 280% 150%;
+  }
+
+  .slide2 .container__slide {
+    background-image: url(../public/images/uslugi/3-min.jpg);
+    background-position: center;
+    background-size: 250% 110%;
+  }
+
+  .slide3 .container__slide {
+    background-image: url(../public/images/uslugi/5-min.jpg);
+
+  }
+
+  .slide4 .container__slide {
+    background-image: url(../public/images/doctor.png);
+    background-size: 280% 150%;
+  }
+
+  .Glavnaya .dots, .Glavnaya .image__container {
+    display: none;
+  }
+
+  .Slide1__button {
+    margin: 1rem 0;
+    width: auto;
+    height: auto;
+    align-items: stretch;
+    border: 2px solid #12ccbf;
+  }
+
+  .Slide1__button .icon {
+    height: initial;
+    border: 1px solid #12ccbf;
+  }
+
+  .Slide1__button .text {
+    font-size: 2rem;
+    line-height: 4rem;
+    border: 1px solid #12ccbf;
+  }
 }
 
 @media only screen and (max-width: 767px) {
