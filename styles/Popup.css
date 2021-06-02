@@ -23,7 +23,7 @@
 	transition-duration: 250ms;
 	transition-timing-function: ease-in;
 	
-	top: 8vh;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
@@ -37,7 +37,7 @@
 
 .popup-outer {
 	position: fixed;
-	top: 8vh;
+	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -107,6 +107,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+	.popup-outer {
+		top: 8vh;
+	}
+
+	.active-popup {
+		top: 8vh;
+	}
 
 	.popup-inner {
 		position: relative;

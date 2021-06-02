@@ -49,6 +49,7 @@
   .content {
     left: 0;
     height: 92vh;
+    width: 100vw;
     top: 8vh;
   }
 
