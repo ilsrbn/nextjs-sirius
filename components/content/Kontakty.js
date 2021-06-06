@@ -14,10 +14,8 @@ function Kontakty() {
 				<img
 					src="/images/dots/6x9.png"
 					className="dots" />
-				<img
-					src="/images/map.png"
-					alt="Map"
-					className="picha" />
+				<iframe className="picha" width="600" height="450" style={{border:0}} loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
+				</iframe>
 			</div>
 			<div className="bigContainer">
 			<div className="container__text firstContainer">
