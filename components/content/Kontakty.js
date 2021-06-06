@@ -14,7 +14,7 @@ function Kontakty() {
 				<img
 					src="/images/dots/6x9.png"
 					className="dots" />
-				<iframe className="picha"  loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
+				<iframe className="picha"  loading="lazy" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
 				</iframe>
 			</div>
 			<div className="bigContainer">
