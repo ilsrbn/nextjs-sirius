@@ -190,14 +190,119 @@
   font-size: 1.85vh;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .solomon {
+    width: 100vw;
+    left: 0;
+    padding: 0;
+  }
+
+  .header {
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .phonebut {
+    display: none;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .buttons button {
+    display: none;
+  }
+
+  .language_selector {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+    display: none;
+  }
+
+  .language_selector__mobile {
+    height: initial;
+    overflow: initial;
+    display: block;
+    
+    position: relative;
+    width: 5vw;
+    height: 100%;
+  }
+
+  .language_selector__mobile .current_loc {
+    font-size: 3vh;
+    line-height: 2.9vh;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    color: #12ccbf;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .language_selector__mobile .other_locs,
+  .language_selector__mobile .other_locs-active {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 24vh;
+    box-shadow: 0 4px 6px 4px rgba(100, 200, 200, 0.1);
+    width: 15vw;
+    list-style: none;
+    z-index: 9999;
+
+    opacity: 1;
+    transition-property: top opacity;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+  }
+
+  .language_selector__mobile .other_locs {
+    top: -24vh;
+    opacity: 0;
+  }
+
+  .language_selector__mobile .other_locs a,
+  .language_selector__mobile .other_locs-active a {
+    height: 8vh;
+    width: 15vw;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    }
+
+
+  .language_selector .delimiter {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .solomon {
+    left: 10vw;
     height: 8vh;
     width: 90vw;
     background-color: white;
     position: fixed;
   }
   .header {
+    left: 16vw;
     box-shadow: 0px 4px 4px -6px gray;
     height: 8vh;
     align-items: stretch;
@@ -292,8 +397,10 @@
 
   .logo {
     width: auto;
+    max-width: 60%;
     margin: 0 auto;
     height: auto;
+    object-fit: contain;
   }
 
 

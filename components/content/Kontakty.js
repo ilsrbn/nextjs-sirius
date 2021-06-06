@@ -14,10 +14,8 @@ function Kontakty() {
 				<img
 					src="/images/dots/6x9.png"
 					className="dots" />
-				<img
-					src="/images/map.png"
-					alt="Map"
-					className="picha" />
+				<iframe className="picha"  loading="lazy" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
+				</iframe>
 			</div>
 			<div className="bigContainer">
 			<div className="container__text firstContainer">
@@ -57,6 +55,12 @@ function Kontakty() {
 					</div>
 				</div>
 			</div>
+			<a className="link__wrapper" href="https://goo.gl/maps/u5KB5zJiw7JThu63A">
+				<span className="Slide1__button">
+					<div className="icon"><img src="/images/arrow.svg" /></div>
+					<div className="text">{curloc.map}</div>
+				</span>
+			</a>
 			</div>
 			<div className="footer">
 			<div className="text">{curloc.footer}</div>

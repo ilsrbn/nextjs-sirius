@@ -83,7 +83,7 @@
 	background: #02d3be;
 	width: 67.347%;
 	height: 81%;
-	z-index: 5;
+	z-index: 0;
 }
 
 .something .picha {
@@ -97,7 +97,7 @@
 	height: 85.6%;
 	background-size: 100% 100%;
 	box-shadow: 0 0 3vh rgba(0, 0, 0, 0.05);
-	z-index: 6;
+	z-index: 0;
 }
 
 .Service_1 .picha {
@@ -139,7 +139,18 @@
 	left: 2%;
 	height: 85%;
 	width: 28%;
-	z-index: 3;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 1023px) {
+	.something {
+		left: 25vw;
+		padding: 0 5vw;
+	}
+
+	.something .image__container {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 767px) {

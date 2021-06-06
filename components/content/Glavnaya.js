@@ -19,8 +19,9 @@ function Glavnaya() {
 	return (
 		<Swiper
 			className="Glavnaya slide"
+			spaceBetween={ 0 }
 
-			data-swiper-parallax={ -50 }
+			data-swiper-parallax='-50%'
 
 			simulateTouch={ false }
 			autoplay
