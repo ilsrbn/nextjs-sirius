@@ -14,7 +14,7 @@ function Kontakty() {
 				<img
 					src="/images/dots/6x9.png"
 					className="dots" />
-				<iframe className="picha" width="600" height="450" style={{border:0}} loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
+				<iframe className="picha"  loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
 				</iframe>
 			</div>
 			<div className="bigContainer">
@@ -55,6 +55,12 @@ function Kontakty() {
 					</div>
 				</div>
 			</div>
+			<a className="link__wrapper" href="https://goo.gl/maps/u5KB5zJiw7JThu63A">
+				<span className="Slide1__button">
+					<div className="icon"><img src="/images/arrow.svg" /></div>
+					<div className="text">{curloc.map}</div>
+				</span>
+			</a>
 			</div>
 			<div className="footer">
 			<div className="text">{curloc.footer}</div>
