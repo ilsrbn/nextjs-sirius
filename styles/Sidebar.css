@@ -149,8 +149,12 @@
     transition: margin-left 150ms ease-in;
   }
 
+  .SidebarList .swiper-pagination-bullet {
+    margin-left: 10%;
+  }
+
   .SidebarList .swiper-pagination-bullet-active {
-    margin-left: 5%;
+    margin-left: 20%;
   }
 
   .hamburger {
