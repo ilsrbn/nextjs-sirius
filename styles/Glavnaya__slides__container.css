@@ -147,24 +147,28 @@
   }
 
   .slide1 .container__slide {
-    background-image: url(../public/images/doctor.png);
-    background-size: 280% 150%;
+    background-image: url(../public/images/implantation.png);
+    background-size: cover;
+    background-position: center;
   }
 
   .slide2 .container__slide {
-    background-image: url(../public/images/uslugi/3-min.jpg);
+    background-image: url(../public/images/uslugi/3-min.png);
     background-position: center;
-    background-size: 250% 110%;
+    background-size: cover;
   }
 
   .slide3 .container__slide {
-    background-image: url(../public/images/uslugi/5-min.jpg);
+    background-image: url(../public/images/uslugi/5-min.png);
+    background-size: cover;
+    background-position: left;
 
   }
 
   .slide4 .container__slide {
-    background-image: url(../public/images/doctor.png);
-    background-size: 280% 150%;
+    background-image: url(../public/images/bite.png);
+    background-size: cover;
+    background-position: center;
   }
 
   .Glavnaya .dots, .Glavnaya .image__container {
@@ -213,28 +217,34 @@
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .slide1 .container__slide {
-    background-image: url(../public/images/doctor.png);
-    background-size: 280% 150%;
+    background-image: url(../public/images/implantation.png);
+    background-size: cover;
+    background-position: center;
   }
 
   .slide2 .container__slide {
-    background-image: url(../public/images/uslugi/3-min.jpg);
+    background-image: url(../public/images/uslugi/3-min.png);
     background-position: center;
-    background-size: 250% 110%;
+    background-size: cover;
   }
 
   .slide3 .container__slide {
-    background-image: url(../public/images/uslugi/5-min.jpg);
+    background-image: url(../public/images/uslugi/5-min.png);
+    background-size: cover;
+    background-position: left;
 
   }
 
   .slide4 .container__slide {
-    background-image: url(../public/images/doctor.png);
-    background-size: 280% 150%;
+    background-image: url(../public/images/bite.png);
+    background-size: cover;
+    background-position: center;
   }
 
   .Glavnaya .dots, .Glavnaya .image__container {
