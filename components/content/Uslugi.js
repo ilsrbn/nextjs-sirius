@@ -86,7 +86,7 @@ function Uslugi() {
 				src="images/dots/6x9.png"
 				className="dots" />
 			<img
-				src="images/chel.png"
+				src="images/uslugi.jpg"
 				className="pickcha" />
 		</div>
 		</div>

@@ -265,7 +265,7 @@
   float: right;
   width: 51.321875vw;
   height: 92vh;
-  background-size: cover;
+  background-size: contain;
 }
 
 .slide1 .image__container {
