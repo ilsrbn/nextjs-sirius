@@ -46,7 +46,7 @@ function SixthService() {
 					src="/images/dots/3x8.png"
 					className="dots" />
 				<img
-					src="/images/uslugi/6-min.jpg"
+					src="/images/uslugi/3-min.png"
 					className="picha"
 					alt="Doctor" />
 			</div>

@@ -37,7 +37,7 @@ function FirstService() {
 					src="/images/dots/3x8.png"
 					className="dots" />
 				<img
-					src="/images/uslugi/1-min.jpg"
+					src="/images/uslugi/5-min.png"
 					className="picha"
 					alt="Doctor" />
 			</div>

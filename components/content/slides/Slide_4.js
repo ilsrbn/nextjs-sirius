@@ -22,7 +22,7 @@ function Slide4() {
 				src="/images/dots/5x4_2.png"
 				className="dots" />
 			<img
-				src="/images/doctor.png"
+				src="/images/bite.png"
 				className="image__container"
 				data-swiper-parallax="-20%" />
 		</div>

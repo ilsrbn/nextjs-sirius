@@ -39,7 +39,7 @@ function ForthService() {
 					src="/images/dots/3x8.png"
 					className="dots" />
 				<img
-					src="/images/uslugi/4-min.jpg"
+					src="/images/implantation.png"
 					className="picha"
 					alt="Doctor" />
 			</div>

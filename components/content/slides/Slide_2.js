@@ -25,7 +25,7 @@ function Slide2() {
 				src="/images/dots/5x4_2.png"
 				className="dots" />
 		<img
-			src="/images/uslugi/3-min.jpg"
+			src="/images/uslugi/3-min.png"
 			className="image__container"
 			data-swiper-parallax="-20%" />
 		</div>
