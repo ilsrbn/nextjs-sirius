@@ -24,10 +24,6 @@ function ONas() {
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
 					{curloc.p}
 				</p>
-				<span className="Slide1__button">
-					<div className="icon"><img src="/images/arrow.svg" /></div>
-					<div className="text">{curloc.button}</div>
-				</span>
 			</div>
 		</div>)
 
