@@ -47,22 +47,6 @@ function Header() {
 		 					className="FacebookIcon"
 		 					alt="Facebook icon" />
 		 			</a>
-		 			<a
-		 				href="https://t.me/HOPPER124"
-		 				rel="noreferrer">
-		 				<img 
-		 					src="/images/instagram.svg"
-		 					alt="Instagram icon"
-		 					className="InstagramIcon" />
-		 			</a>
-		 			<a
-		 				href="https://t.me/HOPPER124"
-		 				rel="noreferrer">
-		 				<img
-		 					src="/images/youtube.svg"
-		 					alt="Youtube Icon"
-		 					className="YouTubeIcon" />
-		 			</a>
 		 			<ul className="language_selector">
 						<li className={'ru' == curloc_str ? 'active_locale' : 'disabled_locale'}>
 							<a href={'/ru' + router.pathname}>РУС</a>

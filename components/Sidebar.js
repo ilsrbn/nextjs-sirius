@@ -37,22 +37,6 @@ function Sidebar(props) {
 		 					className="FacebookIcon"
 		 					alt="Facebook icon" />
 		 			</a>
-		 			<a
-		 				href="https://t.me/HOPPER124"
-		 				rel="noreferrer">
-		 				<img 
-		 					src="/images/instagram.svg"
-		 					alt="Instagram icon"
-		 					className="InstagramIcon" />
-		 			</a>
-		 			<a
-		 				href="https://t.me/HOPPER124"
-		 				rel="noreferrer">
-		 				<img
-		 					src="/images/youtube.svg"
-		 					alt="Youtube Icon"
-		 					className="YouTubeIcon" />
-		 			</a>
 		 		</div>
 			</div>
 		</nav>
