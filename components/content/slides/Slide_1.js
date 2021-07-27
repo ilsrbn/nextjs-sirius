@@ -1,6 +1,11 @@
+import pic from '../../../public/images/implantation.png'
 import { useRouter } from 'next/router'
 import {en, ru, ua} from '../../../translations/Slide1'
 import Link from 'next/link'
+import Image from 'next/image'
+
+
+
 
 function Slide1() {
 
@@ -25,10 +30,10 @@ function Slide1() {
 			<img
 				src="/images/dots/5x4_2.png"
 				className="dots" />
-			<img
-				src="/images/implantation.png"
+			<Image
 				className="image__container"
-				data-swiper-parallax="-20%" />
+				src={pic}
+				placeholder="blur" />
 		</div>
 	)
 }
