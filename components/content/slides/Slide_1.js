@@ -1,6 +1,11 @@
+
 import { useRouter } from 'next/router'
 import {en, ru, ua} from '../../../translations/Slide1'
 import Link from 'next/link'
+
+
+
+
 
 function Slide1() {
 
@@ -26,9 +31,8 @@ function Slide1() {
 				src="/images/dots/5x4_2.png"
 				className="dots" />
 			<img
-				src="/images/implantation.png"
 				className="image__container"
-				data-swiper-parallax="-20%" />
+				src="/images/implantation.png" />
 		</div>
 	)
 }
