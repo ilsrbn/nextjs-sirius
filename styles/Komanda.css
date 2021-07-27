@@ -1,6 +1,7 @@
 .Komanda h1,
 .Komanda h2 {
 	display: inline-block;
+	font-size: 6.25vh;
 }
 
 .Komanda h1 {
@@ -10,186 +11,333 @@
 .Komanda {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .Komanda .container__text {
 	margin: 5vh 0;
+	display: none;
 }
 
 /*--slider window--*/
-.team__slider {
-	width: 80%;
-	height: 100%;
+.cards {
+	display: grid;
+	width: 100%; 
+	grid-template-columns: 1fr 2fr;
+	height: 86.1vh;
+	padding: 1rem;
+	grid-gap: 4rem;
 }
 
-.team__slider .swiper-wrapper {
+/*.cards > * {
+	padding: 0 1vw;
+}*/
+
+.column_1 {
+	height: 100%;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-	position: relative;
-	width: 21.8475vw;
+}
+
+.column_1 .team__card .text .name {
+	font-size: 3vh;
+	font-weight: 700;
+}
+
+.column_1 .team__card .text .role {
+	font-size: 2.5vh;
+}
+
+.column_2 {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.column_2 > * {
+	margin: 0;
+	width: initial;
 }
 
 .team__card {
-	flex: 1 0 19.6875vw;
-	height: auto;
-	margin: 0 1.08vw;
-}
-/*--slider window--*/
-.portrait {
-	width: 19.6875vw;
-	height: 38.056vh;
-	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
 }
 
-.portrait_1 {
-	/*background-image: url('../public/images/doctors/1.png');*/
-	/*background-color: red;*/
+.column_2 .card__img {
+	width: 70%;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.portrait_2 {
-	/*background-image: url('../public/images/doctors/2.png');*/
-	/*background-color: orange;*/
+.column_2 .name {
+	text-align: left;
 }
 
-.portrait_3 {
-	/*background-image: url('../public/images/doctors/3.png');*/
-	/*background-color: yellow;*/
-}
+.card__img {
+	flex: 1 1 80%;
 
-.portrait_4 {
-	/*background-image: url('../public/images/doctors/4.png');*/
-	/*background-color: skyblue;*/
-}
-
-.portrait_5 {
-	/*background-image: url('../public/images/doctors/5.png');*/
-	/*background-color: blue;*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .team__card .text {
-	display: flex;
-	margin: 1vh 0;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	flex: 1 1 20%;
+	width: 100%;
 }
 
-.team__card .tire {
-	display: inline-block;
-	width: 2vw;
-	height: 1px;
-	background-color: #757575;
-	margin-right: 1.5vw;
+.column_2 .team__card .text {
+	width: 70%;
+}
+
+@media only screen and (min-width: 1500px) {
+	.column_2 .card__img {
+		width: 65%;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.column_2 .team__card .text {
+		width: 65%;
+	}
+
+}
+
+.team__card > * {
+	font-family: 'Futura PT Book';
+	font-weight: 400;
 }
 
 .team__card .name {
-	font-family: 'Futura PT Medium';
-	font-weight: 500;
-	font-size: 2.6vh;
+	font-size: 2.4vh;
 	color: black;
-	transition-property: color;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in;
 }
 
-.team__card:hover .name {
-	color: #00625a;
-}
-
-.main_card .name {
+.column_1 .name {
 	color: #12ccbf;
-	transition-property: color;
-	transition-duration: 150ms;
-	transition-timing-function: ease-in;
 }
-
-.main_card:hover .name {
-	color: #00e6d6;
-}
-
-
-
 
 .team__card .role {
-	font-family: 'Futura PT Book';
-	margin-left: 3.5vw;
-	color: #757575;
-	font-weight: 400;
+	width: 100%;
+	text-align: left;
 	font-size: 1.9vh;
-	margin-bottom: 1vh;
+	color: #444;
 }
 
-.nextB {
-	right: -9vw;
+.column_2 .role {
+	text-align: left;
 }
 
-.prevB {
-	left: -9vw;
-	transform: rotate(180deg);
-}
-
-.nav-button {
-	font-size: 2vh;
-	font-weight: 400;
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	height: 80%;
-	width: 9vw;
-	background-color: rgba(255, 255, 255, 1);
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.column_2 .team__card {
 	align-items: center;
-	color: #757575;
-
-	transition-property: color, background-color;
-	transition-duration: 250ms;
-	transition-timing-function: ease-out;
 }
 
-.Komanda .swiper-button-disabled,
-.Komanda .swiper-button-disabled:hover {
-	background-color: white;
-	color: rgba(0, 0, 0, 0);
+.img1 {
+	background-image: url('../public/images/doctors/1.png');
 }
 
-.nav-button:hover{
-	color: #128276;
-	background-color: rgba(250, 255, 255, 0.9);
+.img2 {
+	background-image: url('../public/images/doctors/2.png');
 }
 
-.scrollbar {
-	height: 2px;
-	width: 15.6875vw;
-	background-color: rgba(0, 0, 0, 0.2);
-	margin: 0vh 1.08vw;
+.img3 {
+	background-image: url('../public/images/doctors/3.png');
 }
 
-.swiper-scrollbar-drag {
-	background-color: #58d4bc;
-	height: 100%;
-	box-shadow: 0 0 0.7vh rgba(114, 208, 190, 0.8);
-	cursor: pointer;
+.img4 {
+	background-image: url('../public/images/doctors/4.png');
 }
 
-.nab-shit {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 5vh 1vw;
+.img5 {
+	background-image: url('../public/images/doctors/5.png');
 }
 
-.swiper-pagination-current {
-	color: #12cbaf;
-	text-shadow: 0 0 0.8vh rgba(114, 208, 190, 0.3);
-	transition-duration: 150ms;
-	transition-property: color;
-	transition-timing-function: ease-in;
+@media only screen and (max-width: 1023px) {
+	.Komanda .container__text {
+		display: none;
+	}
+
+	.Komanda .cards {
+		padding: 5% 5% 15%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr;
+		grid-gap: 16px;
+	}
+
+	.Komanda .cards > * {
+		width: 100%;
+	}
+
+	.column_1 .team__card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 16px;
+	}
+
+	.column_1 .team__card .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.column_1 .team__card .name {
+		font-size: 1.7rem;
+		font-weight: 700;
+		text-align: left;
+		width: 100%;
+	}
+
+	.column_1 .team__card .role {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.column_1 .team__card > * {
+		flex: 0 1 50%;
+		width: 100%;
+	}
+
+	.column_1 .card__img {
+	}
+
+	.Komanda .column_2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 16px;
+	}
+
+
+	.team__card .special_name {
+		font-size: 1rem;
+	}
+
+	.column_2 .card__img {
+		width: 100%;
+		background-size: cover;
+		background-position: top;
+		height: 100%;
+		margin-bottom: auto;
+	}
+
+	.column_2 .team__card .text {
+		width: 100%;
+		height: initial;
+	}
+
+	.column_2 .team__card .text > * {
+		text-align: left;
+	}
+
+	.column_2 .team__card .name {
+		font-weight: 700;
+		font-size: 1.4rem;
+		height: initial; 
+	}
+
+	.column_2 .team__card .role {
+		font-size: 0.9rem;
+		display: none;
+	}
 }
-.swiper-pagination-fraction {
-	color: #757575;
-	font-size: 1.9vh;
+
+@media only screen and (max-width: 767px) {
+	.Komanda .container__text {
+		display: none;
+	}
+
+	.Komanda .cards {
+		padding: 5% 5% 15%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr;
+		grid-gap: 16px;
+	}
+
+	.Komanda .cards > * {
+		width: 100%;
+	}
+
+	.column_1 .team__card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 16px;
+	}
+
+	.column_1 .team__card .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.column_1 .team__card .name {
+		font-size: 1.7rem;
+		font-weight: 700;
+		text-align: left;
+		width: 100%;
+	}
+
+	.column_1 .team__card .role {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.column_1 .team__card > * {
+		flex: 0 1 50%;
+		width: 100%;
+	}
+
+	.column_1 .card__img {
+	}
+
+	.Komanda .column_2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 16px;
+	}
+
+
+	.team__card .special_name {
+		font-size: 1rem;
+	}
+
+	.column_2 .card__img {
+		width: 100%;
+		background-size: cover;
+		background-position: top;
+		height: 100%;
+		margin-bottom: auto;
+	}
+
+	.column_2 .team__card .text {
+		width: 100%;
+		height: initial;
+	}
+
+	.column_2 .team__card .text > * {
+		text-align: left;
+	}
+
+	.column_2 .team__card .name {
+		font-weight: 700;
+		font-size: 1rem;
+		height: initial; 
+	}
+
+	.column_2 .team__card .role {
+		font-size: 0.9rem;
+		display: none;
+	}
 }

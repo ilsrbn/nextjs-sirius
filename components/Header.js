@@ -1,40 +1,103 @@
-import CallIcon from '@material-ui/icons/Call'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import InstagramIcon from '@material-ui/icons/Instagram'
-import YouTubeIcon from '@material-ui/icons/YouTube'
+import Popup from './Popup'
 
-import Image from 'next/image'
-import Popup from 'reactjs-popup';
+import React , { useState } from 'react'
+import Link from 'next/link'
+
+
+import {en, ru, ua} from '../translations/Header'
+import { useRouter } from 'next/router'
 
 function Header() {
+
+	let router = useRouter();
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+	let curloc_str = router.locale
+
+	const [languagePopup, setLanguagePopup] = useState(false)
+	const changeLanguage = () => {
+		setLanguagePopup(!languagePopup)
+	}
+
+	const [buttonPopup, setButtonPopup] = useState(false);
+	const changeState = () => {
+		setButtonPopup(!buttonPopup)
+	}
+
 	return (
-		<div className="header">
-			<div className="logo" />
-			<div className="buttons">
-		 		<CallIcon className="CallIcon" />
-		 		<div className="phoneNumber">+38 066 125 86 31</div>
-		 		<Popup trigger={<div className="emergency">ЭКСТРЕННАЯ ПОМОЩЬ</div>} modal>
-		 			<span className="modal">
-		 				<div className="popup-title">
-		 					<p>
-		 					ЭКСТРЕННАЯ
-		 					СТОМАТОЛОГИЧЕСКАЯ ПОМОЩЬ
-		 					</p>
-		 				</div>
-		 				<div className="popup-content">
-		 					Круглосуточно оказываем неотложную помощь всем пациентам с острой зубной болью
-		 					и челюстно-лицевыми травмами.
-		 				</div>
-		 				<div className="popup-phone">
-		 					+38 066 125 86 31
-		 				</div>
-		 			</span>
-		 		</Popup>
-		 		<a href="https://t.me/HOPPER124" rel="noreferrer"><FacebookIcon className="FacebookIcon" /></a>
-		 		<a href="https://t.me/HOPPER124" rel="noreferrer"><InstagramIcon className="InstagramIcon" /></a>
-		 		<a href="https://t.me/HOPPER124" rel="noreferrer"><YouTubeIcon className="YouTubeIcon" /></a>
+		<div className="solomon">
+			<div className="header">
+				<img className="logo" src={curloc.image} />
+				<div className="buttons">
+		 			<a className="phonebut" onClick={changeState}><img
+		 				src="/images/phone.svg" 
+		 				className="CallIcon" />
+		 			<div className="phoneNumber">+38 066 125 86 31</div></a>
+
+		 			<button
+		 				className="emergency"
+		 				onClick={changeState}>
+		 				{curloc.emergency}
+					</button>
+
+		 			<a
+		 				href="https://www.facebook.com/siriusdentclinic/"
+		 				rel="noreferrer">
+		 				<img
+		 					src="/images/facebook.svg" 
+		 					className="FacebookIcon"
+		 					alt="Facebook icon" />
+		 			</a>
+		 			<ul className="language_selector">
+						<li className={'ru' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/ru' + router.pathname}>РУС</a>
+							<span className="delimiter">|</span>
+						</li>
+						<li className={'en' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/en' + router.pathname}>EN</a>
+							<span className="delimiter">|</span>
+						</li>
+						<li className={'ua' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+							<a href={'/ua' + router.pathname}>УКР</a>
+						</li>
+					</ul>
+					<div className="language_selector__mobile">
+						<span onClick={changeLanguage} className="current_loc">
+							{curloc_str}
+						</span>
+						<ul className={languagePopup ? "other_locs-active" : "other_locs"}>
+							<li className={'en' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/en' + router.pathname}>EN</a>
+							</li>
+							<li className={'ua' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/ua' + router.pathname}>УКР</a>
+							</li>
+							<li className={'ru' == curloc_str ? 'active_locale' : 'disabled_locale'}>
+								<a href={'/ru' + router.pathname}>РУС</a>
+							</li>
+						</ul>
+					</div>
+		 		</div>
 		 	</div>
-		 </div>
+		 	<Popup>
+					<div className={buttonPopup ? 'active-popup' : 'deactivated-popup'}>
+						<div className="popup-outer" onClick={changeState} />
+						<div className="popup-inner">
+							<div className="popup-title">
+		 						<button onClick={changeState} className="close-btn">&times;</button>
+		 						<p>
+		 						{curloc.popup.title}
+		 						</p>
+		 					</div>
+		 					<div className="popup-content">
+		 						{curloc.popup.content}
+		 					</div>
+		 					<a href="tel:+380-66-736-37-44"><div className="popup-phone">
+		 						+38 066 125 86 31
+		 					</div></a>
+						</div>
+		 			</div>
+				</Popup>
+				</div>
 		)
 }
 

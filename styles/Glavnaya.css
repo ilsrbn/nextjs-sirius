@@ -1,19 +1,31 @@
 /*--Slider Settings--*/
 .Glavnaya {
 	width: auto;
-	height: 86.1vh;
+  height: 100%;
 }
 
 .Glavnaya .swiper-wrapper {
 	display: flex;
 	flex-direction: row;
-	height: 86.1vh;
+  height: 100%;
 	width: 100%;
 }
 
 .Glavnaya .swiper-slide {
   flex: 1 0 82.8vw;
   position: relative;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Glavnaya .swiper-slide {
+    flex: 0 1 75vw;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .Glavnaya .swiper-slide {
+    flex: 1 0 100vw;
+  }
 }
 /*--Slider Settings--*/
 
@@ -67,8 +79,6 @@
 }
 
 .nav__button {
-  font-size: 3vh;
-  color: white;
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -83,6 +93,10 @@
   transition-property: background;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
+}
+
+.nav__button img {
+  height: 6vh;
 }
 
 .nav__button:hover {
@@ -103,5 +117,80 @@
   background-color: #01d9c4;
   color: white;
   cursor: default;
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav__button__accesoir {
+    display: none;
+  }
+  .nav__button {
+    height: 85px;
+    width: 85px;
+    top: 0;
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    left: 105px;
+  }
+
+  .nav__button__pagination {
+    left: 190px;
+    right: 20px;
+    width: auto;
+    height: 85px;
+    top: 0;
+  }
+
+  .nav__button__pagination .number {
+    font-size: 1.2rem;
+  }
+
+  .nav__button__pagination .description {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 767.98px) {
+  .Glavnaya .swiper-wrapper {
+    height: 92vh;
+  }
+
+  .nav__button__accesoir {
+    display: none;
+  }
+
+  .nav__button {
+    height: 5rem;
+    width: 5rem;
+    top: 0;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    left: 5rem;
+  }
+
+  .nav__button__pagination {
+    left: 10rem;
+    width: calc(100vw - 10rem);
+    height: 5rem;
+    top: 0;
+  }
+
+  .nav__button__pagination .number {
+    font-size: 1.2rem;
+  }
+
+  .nav__button__pagination .description {
+    font-size: 1.2rem;
+  }
 }
 /*--Navigation Buttons*/

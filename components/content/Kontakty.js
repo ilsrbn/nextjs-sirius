@@ -1,4 +1,11 @@
+import { useRouter } from 'next/router'
+import {en, ru, ua} from '../../translations/Contacts'
+
 function Kontakty() {
+
+	let router = useRouter()
+	let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
 	return (
 		<div
 			className="Kontakty slide">
@@ -7,56 +14,62 @@ function Kontakty() {
 				<img
 					src="/images/dots/6x9.png"
 					className="dots" />
-				<img
-					src="/images/map.png"
-					alt="Map"
-					className="picha" />
+				<iframe className="picha" loading="lazy" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD4JjMvcxxkARiid4SmxTdPE&key=AIzaSyBGR_WGfILtv2dL1zwgHk00hz3e_NpzYRU">
+				</iframe>
 			</div>
 			<div className="bigContainer">
 			<div className="container__text firstContainer">
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>К<h2>ОНТАКТЫ</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.h1}<h2>{curloc.h2}</h2></h1>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					г. Одесса, ул. Коблевская 31
+					{curloc.adress1}
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					г. Одесса, ул. Раскидайловская 69
+					{curloc.adress2}
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					тел. +38 066 125 86 31
+					<a href="tel:+380-66-736-37-44" className="number">
+					{curloc.phone}
+					</a>
 				</p>
 				<p data-swiper-parallax={ -100 } data-swiper-parallax-opacity={ 0.1 }>
-					e-mail: sirius_dent@gmail.com
+					{curloc.email}					
 				</p>
 			</div>
 			<div className="line" />
 			<div className="container__text secondContainer">
-				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>Г<h2>РАФИК</h2>.</h1>
+				<h1 data-swiper-parallax={ -80 } data-swiper-parallax-opacity={ 0.1 }>{curloc.h11}<h2>{curloc.h22}</h2></h1>
 				<div className="table">
 					<div className="date">
-						<p>Понедельник</p>
-						<p>Вторник</p>
-						<p>Среда</p>
-						<p>Четверг</p>
-						<p>Пятница</p>
+						<p>{curloc.monday}</p>
+						<p>{curloc.tuesday}</p>
+						<p>{curloc.wednesday}</p>
+						<p>{curloc.thursday}</p>
+						<p>{curloc.friday}</p>
 					</div>
 					<div className="time">
-						<p>8:00 - 18:00</p>
-						<p>8:00 - 18:00</p>
-						<p>8:00 - 18:00</p>
-						<p>8:00 - 18:00</p>
-						<p>8:00 - 18:00</p>
+						<p>{curloc.time}</p>
+						<p>{curloc.time}</p>
+						<p>{curloc.time}</p>
+						<p>{curloc.time}</p>
+						<p>{curloc.time}</p>
 					</div>
 				</div>
 			</div>
+			<a className="link__wrapper" href="https://goo.gl/maps/u5KB5zJiw7JThu63A">
+				<span className="Slide1__button">
+					<div className="icon"><img src="/images/arrow.svg" /></div>
+					<div className="text">{curloc.map}</div>
+				</span>
+			</a>
 			</div>
 			<div className="footer">
-			<div className="text">SIRIUS-DENT 2021</div>
+			<div className="text">{curloc.footer}</div>
 				<div className="links">
-				<a href="#main" rel="noreferrer">ГЛАВНАЯ</a>
-				<a href="#about" rel="noreferrer">О НАС</a>
-				<a href="#partners" rel="noreferrer">ПАРТНЕРЫ</a>
-				<a href="#services" rel="noreferrer">УСЛУГИ</a>
-				<a href="#team" rel="noreferrer">КОМАНДА</a>
+				<a href="" rel="noreferrer">{curloc.main}</a>
+				<a href="#about" rel="noreferrer">{curloc.about}</a>
+				<a href="#partners" rel="noreferrer">{curloc.partners}</a>
+				<a href="#services" rel="noreferrer">{curloc.services}</a>
+				<a href="#team" rel="noreferrer">{curloc.team}</a>
 				</div>
 			</div>
 		</div>)

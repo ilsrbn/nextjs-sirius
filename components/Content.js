@@ -11,13 +11,22 @@ import Uslugi from './content/Uslugi'
 import Komanda from './content/Komanda'
 import Kontakty from './content/Kontakty'
 
+import {en, ru, ua} from '../translations/Sidebar'
+import { useRouter } from 'next/router'
 
-export default function Home() {
-  var menu =[" ГЛАВНАЯ", " О НАС", " ПАРТНЕРЫ", " УСЛУГИ", " КОМАНДА", " КОНТАКТЫ"];
+
+export default function Home(props) {
+  let router = useRouter();
+
+  let curloc = router.locale === 'en' ? en : router.locale === 'ru' ? ru : router.locale === 'ua' ? ua : ''
+
+  var menu = curloc.sidebar
+
+
   SwiperCore.use([Navigation, Keyboard, Mousewheel, Pagination, Parallax, HashNavigation]);
 
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Стоматологическая клиника Sirius-dent</title>
         <link rel="icon" href="/favicon.ico" />
@@ -29,6 +38,7 @@ export default function Home() {
           className="page"
           direction='vertical'
           slidesPerView='auto'
+          simulateTouch={ false }
           parallax={ true }
           keyboard={{
             enabled: true,
@@ -76,6 +86,6 @@ export default function Home() {
       </Swiper>
       </div>
       </div>
-    </div>
+    </>
   )
 }

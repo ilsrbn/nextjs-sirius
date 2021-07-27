@@ -32,7 +32,11 @@ export const ua = {
 	phone: "Телефон: + 38 (066) 125-86-31 ",
 	email: "Пошта: sirius_dent@gmail.com",
 	monday: "Понедiлок",
+<<<<<<< HEAD
 	tuesday: "Вiвтoрoк",
+=======
+	tuesday: "Вiвtoрok",
+>>>>>>> f1b880054d4da6fc71e0f49ed8f9e79660c89679
 	wednesday: "Середа",
 	thursday: "Четвер",
 	friday: "П'ятниця",

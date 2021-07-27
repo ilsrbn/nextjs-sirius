@@ -24,7 +24,45 @@
   height: auto;
 }
 
+.swiper-wrapper > * {
+  margin: 0;
+  padding: 0;
+}
+
 .swiper-slide {
-  flex: 1 0 86.1vh;
+  flex: 0 1 86.1vh;
   position: relative;
+}
+
+@media only screen and (max-width: 1023px) {
+  .content {
+    width: 75vw;
+    left: 25vw;
+  }
+
+  .wrapper {
+    width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .content {
+    left: 0;
+    height: 92vh;
+    width: 100vw;
+    top: 8vh;
+  }
+
+  .page {
+    height: 92vh;
+  }
+
+  .swiper-slide {
+    flex: 0 1 92vh;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+  
 }
